@@ -5,17 +5,28 @@ import "./App.css";
 // import Navbar from './components/Navbar'
 import Home from "./components/Home";
 import Seo from "./components/digitalmarketing/seo/SeoMain";
-import Main from "./components/digitalmarketing/digitalmarketing/Main";
+import DigitalMarketing from "./components/digitalmarketing/digitalmarketing/Main";
 import Ppc from "./components/digitalmarketing/ppc/PpcMain";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <div>
-        {/* <Home /> */}
-        {/* <Main /> */}
-        {/* <Seo /> */}
-        <Ppc />
+        <Router>
+          <div>
+            {/* <Navbar />  */}
+
+            <Routes>
+              <Route path="/" element={<Home />} />
+
+              <Route path="/digitalmarketing" element={<DigitalMarketing />} />
+              <Route path="/digitalmarketing/Seo" element={<Seo />} />
+              <Route path="/digitalmarketing/Ppc" element={<Ppc />} />
+            </Routes>
+          </div>
+        </Router>
       </div>
     </>
   );

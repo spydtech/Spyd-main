@@ -24,9 +24,11 @@ function Seo() {
               better.
             </p>
 
-            <button className="text-white mt-4 px-6 p-2 rounded-md  w-auto bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-xl ">
-              Read More
-            </button>
+            <Link to="/digitalmarketing/Seo">
+              <button className="text-white mt-4 px-6 p-2 rounded-md  w-auto bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-xl ">
+                Read More
+              </button>
+            </Link>
           </div>
           <div className="">
             <img className="float-end w-96 h-96" src={seoImage} />

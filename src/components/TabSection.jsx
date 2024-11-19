@@ -80,7 +80,7 @@ function TabSection() {
       <div className="h-[400px] p-8 bg-white rounded-b-md  max-w-9xl mx-auto flex items-start space-x-8">
         {/* Text Content */}
         <div className="flex-1">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4">
+          <h2 className="text-2xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
             {tabContent[activeTab].title}
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">

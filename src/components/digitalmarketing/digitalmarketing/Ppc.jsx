@@ -1,5 +1,6 @@
 import React from "react";
 import ppc from "../../../assets/digitalmarketing/ppc.png";
+import { Link } from "react-router-dom";
 function Ppc() {
   return (
     <>
@@ -19,9 +20,11 @@ function Ppc() {
               in PPC best practices to find creative strategies that can assist
               in the growth of your business.
             </p>
-            <button className="text-white mt-4 px-6 p-2 rounded-md  w-auto bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-xl ">
-              Read More
-            </button>
+            <Link to="/digitalmarketing/Ppc">
+              <button className="text-white mt-4 px-6 p-2 rounded-md  w-auto bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-xl ">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
