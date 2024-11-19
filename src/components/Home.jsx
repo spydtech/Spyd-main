@@ -6,17 +6,19 @@ import WelcomeSection from './WelcomeSection'
 import Methodology from './Methodology'
 import TabSection from './TabSection'
 import OurWorks from './OurWorks'
+import AboutUs from './company/AboutUs'
 
 function Home() {
   return (
     <div>
         <Navbar />
         {/* <Hero /> */}
-        <CarouselComponent />
-        <WelcomeSection />
-        <Methodology />
-        <TabSection />
-        <OurWorks />
+        {/* <CarouselComponent /> */}
+        {/* <WelcomeSection /> */}
+        {/* <Methodology /> */}
+        {/* <TabSection /> */}
+        {/* <OurWorks /> */}
+        <AboutUs />
     </div>
   )
 }
