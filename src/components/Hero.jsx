@@ -2,7 +2,7 @@
 const Hero = () => {
     return (
       <section className="text-center py-16 bg-gray-100">
-        <h1 className="text-4xl font-bold text-blue-600 mb-4">ENTERPRISE & CUSTOM APPLICATION DEVELOPMENT</h1>
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">ENTERPRISE & CUSTOM APPLICATION DEVELOPMENT</h1>
         <p className="text-gray-600 max-w-xl mx-auto mb-8">
           ERPNext: SPY D TECHNOLOGY deep experience, expertise, and exposure in designing and developing enterprise and custom web applications catering to a myriad of industries.
         </p>

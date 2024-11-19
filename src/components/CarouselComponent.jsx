@@ -26,7 +26,7 @@ const CarouselComponent = () => {
 <div
     class="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-20 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
     <div className="md:w-2/3">
-              <h2 className="text-3xl md:text-4xl font-semibold text-blue-600 mb-4">
+              <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
                 ENTERPRISE & CUSTOM APPLICATION DEVELOPMENT
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
@@ -68,7 +68,7 @@ const CarouselComponent = () => {
     
     </div>
     <div className="md:w-2/3">
-              <h2 className="text-3xl md:text-4xl font-semibold text-blue-600 mb-4">
+              <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
               MOBILITY SOLUTIONS WITH CUTTING EDGE TECHNOLOGY
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6 md:w-[500px]">
@@ -100,7 +100,7 @@ const CarouselComponent = () => {
 <div
     class="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-20 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
     <div className="md:w-2/3">
-              <h2 className="text-3xl md:text-4xl font-semibold text-blue-600 mb-4">
+              <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
               FULL SERVICES DIGITAL MARKETING
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
@@ -142,7 +142,7 @@ const CarouselComponent = () => {
     
     </div>
     <div className="md:w-2/3">
-              <h2 className="text-3xl md:text-4xl font-semibold text-blue-600 mb-4">
+              <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
               Empower Your Business with Cutting-Edge Microsoft Solutions
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
@@ -174,7 +174,7 @@ const CarouselComponent = () => {
 <div
     class="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-20 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
     <div className="md:w-2/3">
-              <h2 className="text-3xl md:text-4xl font-semibold text-blue-600 mb-4">
+              <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
               Empower Your Business with Artificial Inteligency,cloud technologies and testing solutions
               </h2>
               <p className="text-gray-600 text-base md:text-lg mb-6">
