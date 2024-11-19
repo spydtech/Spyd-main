@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -6,7 +7,15 @@ function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Mobile menu toggle
   const dropdownRef = useRef(null); // Reference for outside click detection
 
-  const menuItems = ["Home", "Company", "Services", "Products", "Portfolio", "Careers", "Contact us"];
+  const menuItems = [
+    "Home",
+    "Company",
+    "Services",
+    "Products",
+    "Portfolio",
+    "Careers",
+    "Contact us",
+  ];
 
   // Function to handle outside clicks and close dropdown
   const handleClickOutside = (event) => {
@@ -57,7 +66,9 @@ function Navbar() {
               key={index}
               onClick={() => setActiveIndex(index)}
               className={`${
-                activeIndex === index ? "bg-blue-600 text-white" : "text-blue-600"
+                activeIndex === index
+                  ? "bg-blue-600 text-white"
+                  : "text-blue-600"
               } font-semibold px-3 py-1 rounded cursor-pointer transition-all hover:bg-blue-600 hover:text-white relative`}
             >
               {item}
@@ -99,22 +110,34 @@ function Navbar() {
                     >
                       <ul className="py-2 flex justify-center text-sm text-gray-700">
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
                             About Us
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
                             Vision & Mission
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
                             What Makes Us Different
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
                             Our Core Values
                           </a>
                         </li>
@@ -130,19 +153,36 @@ function Navbar() {
                     >
                       <ul className="py-2 flex justify-center text-sm text-gray-700">
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
                             Web Development
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
                             App Development
                           </a>
                         </li>
                         <li>
-                          <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
                             Consulting
                           </a>
+                        </li>
+                        <li>
+                          <Link
+                            to="/digitalmarketing"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Digital Marketing
+                          </Link>
                         </li>
                       </ul>
                     </div>

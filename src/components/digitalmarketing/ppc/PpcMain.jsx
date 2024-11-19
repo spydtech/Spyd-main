@@ -5,6 +5,7 @@ import Seo_vs_Ppc from "./Seo_vs_Ppc";
 import UtilityPpc from "./UtilityPpc";
 import PpcAdvertising from "./PpcAdvertising";
 import PpcTypes from "./PpcTypes";
+import PpcAds from "./PpcAds";
 
 function PpcMain() {
   return (
@@ -15,6 +16,7 @@ function PpcMain() {
       <UtilityPpc />
       <PpcAdvertising />
       <PpcTypes />
+      <PpcAds />
     </>
   );
 }
