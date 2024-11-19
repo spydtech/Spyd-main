@@ -17,8 +17,8 @@ const CarouselComponent = () => {
   };
 
   return (
-    <div className="bg-white w-full ">
-      <div className="max-w-8xl mx-auto mt-[-5%]">
+    <div className="bg-white w-full  ">
+      <div className="max-w-8xl mx-auto ">
         <Slider {...settings}>
           {/* Slide 1 */}
           <div class="sm:mt-6 lg:mt-5 mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
