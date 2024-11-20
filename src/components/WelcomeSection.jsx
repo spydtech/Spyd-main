@@ -36,7 +36,7 @@ const WelcomeSection = () => {
 
         {/* Right Side: Text Content */}
         <div className="flex flex-col justify-center space-y-5">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-6">
             Welcome to SpY D Technology
           </h2>
           <p className="text-gray-700 text-xl md:text-base leading-relaxed w-4/7">

@@ -8,7 +8,7 @@ function Methodology() {
 
       {/* Banner */}
       <div className="text-center max-w-4xl z-10">
-        <h1 className="text-2xl md:text-3xl font-semibold text-blue-600 mb-6">
+        <h1 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-6">
           We are a one-stop, full-service, and turnkey solutions provider for
           Web, Mobility and Digital Marketing Services.
         </h1>
@@ -25,7 +25,7 @@ function Methodology() {
 
       {/* Methodology Section */}
       <div className="text-center max-w-3xl mt-8 z-10">
-        <h2 className="text-2xl font-semibold text-blue-600 mb-4">
+        <h2 className="text-2xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
           Our Methodology for Website Design
         </h2>
         <p className="text-gray-700 leading-relaxed">
