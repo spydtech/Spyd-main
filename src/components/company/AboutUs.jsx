@@ -9,10 +9,10 @@ const AboutUs = () => {
         className="h-[400px] w-full"
       />
       <div>
-        <h1 className=" my-5 font-normal text-4xl font-serif bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-center text-transparent bg-clip-text">
+        <h1 className=" my-5 font-normal text-3xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-center text-transparent bg-clip-text">
           WHO WE ARE
         </h1>
-        <div className="mx-20 space-y-3">
+        <div className="mx-40 space-y-3">
           <p>
             In the ever-evolving landscape of technology, SPY D
             TECHNOLOGY stands as India's premier full-scale software and
@@ -90,7 +90,7 @@ const AboutUs = () => {
             and content marketing, among others.
           </p>
         </div>
-        <div className="my-5 text-center">
+        {/* <div className="my-5 text-center">
           <h2 className="pb-2 font-normal text-4xl font-serif bg-gradient-to-b from-[#00CEFF] to-[#0072FF]  text-transparent bg-clip-text">
             Let’s Ignite Conversations in the World of Innovative Technology!
           </h2>
@@ -102,7 +102,7 @@ const AboutUs = () => {
             email, and let the conversation begin.
           </p>
           <button type="button" className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] font-serif text-white px-10 py-3 text-base rounded-xl">Read More</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
