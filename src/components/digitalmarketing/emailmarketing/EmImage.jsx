@@ -1,12 +1,12 @@
 import React from "react";
-import ppcimage from "../../../assets/digitalmarketing/ppc/ppc.png";
-function PpcImage() {
+import emimage from "../../../assets/digitalmarketing/emailmarketing/emailmarketing.png";
+function EmImage() {
   return (
     <>
       <div className="">
         <img
           className="object-cover w-full"
-          src={ppcimage}
+          src={emimage}
           alt="digitalMarket"
         />
       </div>
@@ -14,4 +14,4 @@ function PpcImage() {
   );
 }
 
-export default PpcImage;
+export default EmImage;

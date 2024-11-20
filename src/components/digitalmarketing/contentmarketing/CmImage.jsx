@@ -1,12 +1,12 @@
 import React from "react";
-import ppcimage from "../../../assets/digitalmarketing/ppc/ppc.png";
-function PpcImage() {
+import cmimage from "../../../assets/digitalmarketing/contentmarketing/contentmarketing.png";
+function CmImage() {
   return (
     <>
       <div className="">
         <img
           className="object-cover w-full"
-          src={ppcimage}
+          src={cmimage}
           alt="digitalMarket"
         />
       </div>
@@ -14,4 +14,4 @@ function PpcImage() {
   );
 }
 
-export default PpcImage;
+export default CmImage;

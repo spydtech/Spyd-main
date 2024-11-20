@@ -5,7 +5,11 @@ function SeoImage() {
   return (
     <>
       <div className="">
-        <img className="object-cover " src={seoimage} alt="digitalMarket" />
+        <img
+          className="object-cover w-full"
+          src={seoimage}
+          alt="digitalMarket"
+        />
       </div>
       <div>
         <p className="lg:text-2xl text-sm mx-4 text-center mt-6">

@@ -1,15 +1,16 @@
 import React from "react";
 import cm from "../../../assets/digitalmarketing/contentmarketing.png";
+import { Link } from "react-router-dom";
 function ContentMarketing() {
   return (
     <>
-      <div className="mx-4 mt-4">
-        <div className=" flex justify-around items-center">
+      <div className="lg:mx-4 mt-4">
+        <div className=" flex lg:flex-row flex-col justify-around items-center">
           <div className="">
-            <img className="float-end w-96 h-96 object-cover" src={cm} />
+            <img className="float-end w-96 h-96" src={cm} />
           </div>
-          <div className="w-1/2 h-auto">
-            <p className="text-3xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
+          <div className="lg:w-1/2 w-full p-2 h-auto">
+            <p className="lg:text-3xl text-xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
               Content Marketing
             </p>
             <p className="">
@@ -20,9 +21,11 @@ function ContentMarketing() {
               are rooting their base in various digital platforms, since
               marketing is one of the most essential aspect of a business plan.
             </p>
-            <button className="text-white mt-4 px-6 p-2 rounded-md  w-auto bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-xl ">
-              Read More
-            </button>
+            <Link to="/digitalmarketing/cm">
+              <button className="mt-6 px-6 py-3 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg ">
+                Read More
+              </button>
+            </Link>
           </div>
         </div>
       </div>

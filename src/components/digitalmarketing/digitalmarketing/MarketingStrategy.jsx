@@ -30,17 +30,17 @@ function MarketingStrategy() {
     <>
       <div className="lg:mt-6 my-4 mx-2">
         <div className="text-center">
-          <p className="lg:text-3xl text-2xl bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
+          <p className="lg:text-3xl text-xl bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
             Get a revenue generating digital marketing strategy
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-4 mt-6">
+        <div className="grid lg:grid-cols-3 gap-6 md:grid-cols-2 grid-cols-1 lg:mx-4 mt-6">
           {data.map((item, index) => (
             <div
               id={`card-${index}`}
               key={index}
-              className="w-[340px] hover:text-white hover:bg-gradient-to-r hover:to-[#00ceff] hover:from-[#0072ff] rounded-sm bg-gradient-to-t to-[#00ceff] from-[#0866e2] mx-auto p-4 h-auto"
+              className="lg:w-[320px] w-[300px] hover:text-white hover:bg-gradient-to-r hover:to-[#00ceff] hover:from-[#0072ff] rounded-sm bg-gradient-to-t to-[#00ceff] from-[#0866e2] mx-auto p-4 h-auto"
             >
               <p className="title text-center text-2xl font-medium">
                 {item.heading}

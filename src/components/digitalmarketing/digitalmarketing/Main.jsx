@@ -7,6 +7,9 @@ import Smm from "./Smm";
 import ContentMarketing from "./ContentMarketing";
 import EmailMarketing from "./EmailMarketing";
 import emailmarketingimage from "../../../assets/digitalmarketing/bgimage.png";
+import CallToAction from "../../CallToAction";
+import Footer from "../../Footer";
+
 function Main() {
   return (
     <>
@@ -32,6 +35,8 @@ function Main() {
       {/* </div> */}
       <ContentMarketing />
       <EmailMarketing />
+      <CallToAction />
+      <Footer />
     </>
   );
 }

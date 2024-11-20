@@ -6,7 +6,8 @@ import UtilityPpc from "./UtilityPpc";
 import PpcAdvertising from "./PpcAdvertising";
 import PpcTypes from "./PpcTypes";
 import PpcAds from "./PpcAds";
-
+import CallToAction from "../../CallToAction";
+import Footer from "../../Footer";
 function PpcMain() {
   return (
     <>
@@ -17,6 +18,8 @@ function PpcMain() {
       <PpcAdvertising />
       <PpcTypes />
       <PpcAds />
+      <CallToAction />
+      <Footer />
     </>
   );
 }
