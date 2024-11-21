@@ -19,6 +19,8 @@ import Testing from "./components/OtherTechnology/Testing/Testing";
 import AiandMl from "./components/OtherTechnology/Ai&Ml/AiandMl";
 import Aws from "./components/OtherTechnology/CloudTech/Aws";
 
+import Carrers from "./components/carrers/CarrersMain";
+
 function App() {
   return (
     <>
@@ -46,6 +48,8 @@ function App() {
                 element={<ContentMarketing />}
               />
               <Route path="/digitalmarketing/em" element={<EmailMarketing />} />
+
+              <Route path="/carrers" element={<Carrers />} />
             </Routes>
           </div>
         </Router>
