@@ -33,9 +33,9 @@ const aboutusData = [
 const AboutUs = () => {
   return (
     <div className="font-serif">
-      <img src="src/assets/company/aboutus/hero.png" alt="aboutusHeroImg" />
+      <img src="src/assets/company/aboutus/hero.png" alt="aboutusHeroImg" className="w-full" />
       <div>
-        <h1 className="text-center my-3 text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">WHO WE ARE</h1>
+        <h1 className="text-center font-bold my-3 text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">WHO WE ARE</h1>
         <ul className="mx-5 md:mx-10 lg:mx-20 space-y-3">
           {aboutusData.map((each) => (
             <li key={each.id}>
