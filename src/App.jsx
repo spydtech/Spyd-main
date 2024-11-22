@@ -1,23 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import './App.css'
 // import Navbar from './components/Navbar'
-import Home from './components/Home'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AdvancedTech from './components/OtherTechnology/AdvancedTech'
+// import Home from './components/Home'
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import AdvancedTech from './components/OtherTechnology/AdvancedTech'
 import Navbar from './components/Navbar'
-import CloudTech from './components/OtherTechnology/CloudTech/CloudTech'
-import Testing from './components/OtherTechnology/Testing/Testing'
-import AiandMl from './components/OtherTechnology/Ai&Ml/AiandMl'
-import Aws from './components/OtherTechnology/CloudTech/Aws'
+import AboutUs from './components/company/AboutUs'
+
+// import CloudTech from './components/OtherTechnology/CloudTech/CloudTech'
+// import Testing from './components/OtherTechnology/Testing/Testing'
+// import AiandMl from './components/OtherTechnology/Ai&Ml/AiandMl'
+// import Aws from './components/OtherTechnology/CloudTech/Aws'
 
 function App() {
  
 
   return (
     <>
-      <div>
+      {/* <div>
       <Router>
       <div>
         <Navbar /> 
@@ -33,7 +35,11 @@ function App() {
         </Routes>
       </div>
     </Router>
-      </div>
+      </div> */}
+      <>
+      <Navbar />
+      <AboutUs />
+      </>
      
     </>
   )
