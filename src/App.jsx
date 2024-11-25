@@ -15,6 +15,12 @@ import AiandMl from "./components/OtherTech/AiandML/AiandML";
 import CloudTech from "./components/OtherTech/CloudTech/CloudTech";
 import Testing from "./components/OtherTech/Testing/Testing";
 import Navbar from "./components/Navbar";
+import CloudAzure from "./components/OtherTech/CloudTech/CloudAzure";
+import GCloud from "./components/OtherTech/CloudTech/GCloud";
+import Ai from "./components/OtherTech/AiandML/Ai";
+import MlLearning from "./components/OtherTech/AiandML/MlLearning";
+
+
 
 
 
@@ -22,7 +28,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+   
       
 <div>
         <Router>
@@ -38,6 +44,14 @@ function App() {
               <Route path="/ai&ml" element={<AiandMl/>} />
               <Route path="/cloudtech" element={<CloudTech />} />
               <Route path="/testing" element={<Testing />} />
+              <Route path="/azure" element={<CloudAzure />} />
+              <Route path="/gcloude" element={<GCloud />} />
+              <Route path="/ai" element={<Ai />} />
+              <Route path="/ml" element={<MlLearning />} />
+
+
+              
+             
 
               <Route path="/digitalmarketing" element={<DigitalMarketing />} />
               <Route path="/digitalmarketing/Seo" element={<Seo />} />
@@ -48,7 +62,7 @@ function App() {
         </div>
 
       
-    </>
+   
   );
 }
 

@@ -26,6 +26,8 @@ function Home() {
         <Methodology />
         <TabSection />
         <OurWorks />
+        <CallToAction />
+        <Footer />
     </div>
   )
 }
