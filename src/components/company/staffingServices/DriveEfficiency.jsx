@@ -2,23 +2,23 @@ import React from "react";
 
 const DriveEfficiency = () => {
   return (
-    <div className="my-8 flex flex-col items-center gap-5">
+    <div className="my-5 flex flex-col items-center gap-3">
       <p className=" font-normal text-xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
         Drive Efficiency
       </p>
-      <h1 className=" font-normal text-3xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
-        seamless Integrations & Automated Workflows
+      <h1 className=" font-normal text-center md:text-3xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
+        Seamless Integrations & Automated Workflows
       </h1>
-      <p className="">
+      <p className="mx-5 text-center text-xs md:text-base">
         Our technology drives efficiency through seamless integrations and
         automated data workflows
       </p>
 
-      <div className="flex gap-5">
+      <div className="flex flex-col md:flex-row gap-5 lg:mx-10">
         <img
           src="src/assets/company/services/drive-efficiency/jobs.png"
           alt="image-jobs"
-          className="h-72"
+          className="md:h-72"
         />
         <div className="flex flex-col items-center space-y-5">
           <div

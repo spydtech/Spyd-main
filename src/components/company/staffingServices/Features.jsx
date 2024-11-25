@@ -40,7 +40,7 @@ const Features = () => {
     }
   ]
   return (
-    <div className="flex flex-col items-center lg:gap-3 my-3 lg:my-8">
+    <div className="flex flex-col items-center lg:gap-3 my-3 lg:my-8 xl:mx-16">
       <p className=" font-normal text-lg bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
         Our Features
       </p>
@@ -59,13 +59,11 @@ const Features = () => {
           </li>
         ))}
       </ul>
-    
-      <button
-        type="button"
-        className=" bg-gradient-to-r my-3 from-[#00CEFF] to-[#0072FF] px-4 py-2 text-sm lg:px-7 lg:py-3 lg:text-xl text-white rounded-xl"
-      >
-        See all Features
+
+      <button className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white font-medium py-2 px-6 rounded-lg shadow-md mt-2">
+      See all Features
       </button>
+      
     </div>
   );
 };
