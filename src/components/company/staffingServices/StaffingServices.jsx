@@ -10,9 +10,9 @@ const StaffingServices = () => {
     <div className='font-serif'>
         <Hero />
         <Features />
-        <Testimonials />
-        <DriveEfficiency />
-        <Solutions />
+        {/* <Testimonials /> */}
+        {/* <DriveEfficiency /> */}
+        {/* <Solutions /> */}
     </div>
   )
 }
