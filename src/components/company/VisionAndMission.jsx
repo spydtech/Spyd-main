@@ -1,17 +1,19 @@
 import React from "react";
+import Footer from '../../components/Footer'
+
 
 const VisionAndMission = () => {
   return (
     <div className="font-serif">
-      <img src="src/assets/company/vision/hero.png" alt="visionHeroImg" className="w-full" />
+      <img src="src/assets/company/vision/hero.png" alt="visionHeroImg" className="h-44 lg:h-96 w-full" />
 
       <div className="m-5 md:flex flex-col items-center space-y-3">
         <div className="flex flex-col md:flex-row gap-4 lg:gap-10 md:items-center">
-          <div className="space-y-2 lg:w-[600px] xl:w-[800px]">
-            <h1 className="text-xl font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+          <div className="space-y-2 lg:w-[600px] xl:w-[800px] max-md:order-1">
+            <h1 className="text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Mission
             </h1>
-            <p>
+            <p className="text-sm lg:text-base">
               SPY D Tech's mission is singular and unequivocal — to establish
               ourselves as a company dedicated to cost optimization while
               maximizing profits for our clients. We firmly believe that the
@@ -28,16 +30,16 @@ const VisionAndMission = () => {
           <img
             src="src/assets/company/vision/image-1.png"
             alt="image-1"
-            className="w-60 mx-auto md:h-60"
+            className="w-60 mx-auto md:h-60 "
           />
         </div>
 
         <div className="flex flex-col md:flex-row gap-4 lg:gap-10 md:items-center">
-          <div className="space-y-2 lg:w-[600px] xl:w-[800px] md:order-2">
-            <h1 className="text-xl font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+          <div className="space-y-2 lg:w-[600px] xl:w-[800px] md:order-2 max-md:order-1">
+            <h1 className="text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
             Vision
             </h1>
-            <p>
+            <p className="text-sm lg:text-base">
               At SPY D Tech, our vision extends beyond conventional success
               metrics. We aspire not just to be an internationally reputed
               company, but to be a trailblazer in the realm of emerging
@@ -60,6 +62,7 @@ const VisionAndMission = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

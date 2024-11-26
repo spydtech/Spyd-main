@@ -41,10 +41,10 @@ const Features = () => {
   ]
   return (
     <div className="flex flex-col items-center lg:gap-3 my-3 lg:my-8 xl:mx-16">
-      <p className=" font-normal text-lg bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
+      <p className="text-lg bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
         Our Features
       </p>
-      <h1 className=" font-normal md:text-xl lg:text-2xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
+      <h1 className=" text-lg md:text-xl lg:text-2xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
         Your Candidate Experience Platform
       </h1>
 
@@ -60,7 +60,7 @@ const Features = () => {
         ))}
       </ul>
 
-      <button className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white font-medium py-2 px-6 rounded-lg shadow-md mt-2">
+      <button className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white py-2 px-6 rounded-lg shadow-md mt-2">
       See all Features
       </button>
       

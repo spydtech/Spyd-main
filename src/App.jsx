@@ -81,7 +81,10 @@ function App() {
           <Route path="/ai&ml" element={<AiandMl />} />
           <Route path="/aws" element={<Aws />} />
           <Route path="/aboutus" element={<AboutUs />} />
-         
+          <Route path="/vision-and-mission" element={<VisionAndMission />} />
+          <Route path="/whatmakeus-different" element={<WhatMakesUsDifferent />} />
+          <Route path="/ourcore-values" element={<OurCoreValues />} />
+          <Route path="/staffingservices" element={<StaffingServices />} />
         </Routes>
       </div>
     </Router>

@@ -66,10 +66,10 @@ const Testimonials = () => {
 
   return (
     <div className="flex flex-col items-center gap-5">
-      <p className="font-normal md:text-xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
+      <p className="text-lg md:text-xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
         Our Testimonial
       </p>
-      <h1 className="font-normal md:text-3xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
+      <h1 className="text-lg md:text-3xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
         What Our Customers Says!
       </h1>
       <p className="text-center text-sm mx-3">
@@ -123,7 +123,7 @@ const Testimonials = () => {
         </button>
       </div>
 
-      <button className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white font-medium py-2 px-6 rounded-lg shadow-md">
+      <button className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white py-2 px-6 rounded-lg shadow-md">
         Start for Free
       </button>
      

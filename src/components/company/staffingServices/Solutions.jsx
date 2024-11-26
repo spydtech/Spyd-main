@@ -3,7 +3,7 @@ import React from "react";
 const Solutions = () => {
   return (
     <div className="my-5 flex flex-col items-center gap-3">
-      <h1 className=" font-normal text-xl md:text-3xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
+      <h1 className=" text-xl md:text-3xl bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-transparent bg-clip-text">
         Solutions That Funnel Results
       </h1>
       <p className="text-center text-xs lg:text-base leading-5 mx-3">

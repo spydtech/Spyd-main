@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from '../../components/Footer'
+
 
 const OurCoreValues = () => {
   return (
@@ -6,19 +8,19 @@ const OurCoreValues = () => {
       <img
         src="src/assets/company/coreValues/hero.png"
         alt="coreValuesHeroImg"
-        className="w-full"
+        className="w-full h-44 lg:h-96"
       />
       <div className="py-5">
-        <h1 className="text-center font-bold my-3 text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+        <h1 className="text-center my-3 text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
           Our Values
         </h1>
 
         <div className="mx-5 md:mx-10 lg:mx-20 space-y-3">
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg  bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Service Excellence 
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               We take pride in delivering an efficient, well-informed service to
               our clients. At DevStack, integrity guides all our colleagues as
               we work to achieve the best outcomes for our clients. This
@@ -30,10 +32,10 @@ const OurCoreValues = () => {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg  bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Transparency
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               Our approach guarantees absolute clarity about the services we
               offer. We pride ourselves on delivering precisely what is
               promised—on time, within budget, and with no unwelcome surprises!
@@ -41,10 +43,10 @@ const OurCoreValues = () => {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg  bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Reliability
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               We commit only to promises we can uphold, cultivating strong
               client relationships. In case of any delays or issues delivering
               our commitments, we promptly inform you, never avoiding
@@ -53,10 +55,10 @@ const OurCoreValues = () => {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg  bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Honesty
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               Our approach is rooted in honesty, acknowledging that while we
               deliver 99+% of our work accurately and on schedule, occasional
               errors may occur. In the rare event of mistakes, we are committed
@@ -68,10 +70,10 @@ const OurCoreValues = () => {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg  bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Customer Service
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               Differentiating ourselves in the industry, we prioritize great
               customer service with a friendly and personable approach. Our
               commitment to excellent service is evident through:
@@ -90,10 +92,10 @@ const OurCoreValues = () => {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Flexible Methodology
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               To ensure the success of your project, we dedicate time to
               comprehend and accommodate your unique needs. We refrain from
               imposing rigid working methods or sluggish processes that could
@@ -110,10 +112,10 @@ const OurCoreValues = () => {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Value for Money
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               In the current business climate, technological investment is
               crucial for optimizing operations, boosting profits, and
               sustaining revenue generation. Although investing in new
@@ -128,10 +130,10 @@ const OurCoreValues = () => {
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-lg font-bold bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
+            <h1 className="text-lg bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">
               Conclusion
             </h1>
-            <p>
+            <p className="text-sm md:text-base">
               At DevStack, our core beliefs and foundation revolve around
               delivering high-value services that truly benefit our clients'
               business, processes, and drive efficiencies and profitability. We
@@ -142,6 +144,7 @@ const OurCoreValues = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

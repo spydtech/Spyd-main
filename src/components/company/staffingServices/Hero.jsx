@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="font-serif">
       <div
-        className="bg-cover bg-center text-center bg-[#0866E2] space-y-2 md:space-y-3 lg:space-y-5 py-2 md:h-56 lg:h-96 md:flex flex-col items-center justify-center"
+        className="bg-cover bg-center text-center bg-[#0866E2] space-y-2 md:space-y-3 lg:space-y-5 py-2 h-44 md:h-56 lg:h-96 flex flex-col items-center justify-center"
         style={{
           backgroundImage: `url("src/assets/company/staffingServices/hero.png")`,
         }}
