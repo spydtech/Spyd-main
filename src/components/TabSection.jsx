@@ -58,51 +58,51 @@ function TabSection() {
   };
 
   return (
-    <div className="min-h-screen bg-white p-9">
-      {/* Tabs Section */}
-      <div className="flex justify-center space-x-6 bg-blue-600 text-white py-3 px-4 rounded-t-md">
-        {Object.keys(tabContent).map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`font-semibold ${
-              activeTab === tab
-                ? 'border-b-2 border-white'
-                : 'hover:border-b-2 hover:border-blue-300'
-            } px-4 py-2`}
-          >
-            {tab}
-          </button>
-        ))}
+    <div className="min-h-screen bg-white p-4 md:p-9">
+    {/* Tabs Section */}
+    <div className="flex overflow-x-auto space-x-3 bg-blue-600 text-white py-3 px-4 rounded-t-md scrollbar-hide">
+      {Object.keys(tabContent).map((tab) => (
+        <button
+          key={tab}
+          onClick={() => setActiveTab(tab)}
+          className={`font-semibold text-sm sm:text-base whitespace-nowrap ${
+            activeTab === tab
+              ? 'border-b-2 border-white'
+              : 'hover:border-b-2 hover:border-blue-300'
+          } px-3 py-2`}
+        >
+          {tab}
+        </button>
+      ))}
+    </div>
+
+    {/* Content Section */}
+    <div className="p-4 bg-white rounded-b-md max-w-9xl mx-auto flex flex-col lg:flex-row items-start space-y-4 lg:space-y-0 lg:space-x-8">
+      {/* Text Content */}
+      <div className="flex-1">
+        <h2 className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
+          {tabContent[activeTab].title}
+        </h2>
+        <p className="text-gray-700 leading-relaxed text-sm sm:text-base mb-4">
+          {tabContent[activeTab].description}
+        </p>
+        <ul className="text-gray-700 list-disc text-sm sm:text-base ml-5 mb-6">
+          {tabContent[activeTab].points.map((point, index) => (
+            <li key={index}>{point}</li>
+          ))}
+        </ul>
       </div>
 
-      {/* Content Section */}
-      <div className="h-[400px] p-8 bg-white rounded-b-md  max-w-9xl mx-auto flex items-start space-x-8">
-        {/* Text Content */}
-        <div className="flex-1">
-          <h2 className="text-2xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
-            {tabContent[activeTab].title}
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            {tabContent[activeTab].description}
-          </p>
-          <ul className="text-gray-700 list-disc ml-5 mb-6">
-            {tabContent[activeTab].points.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Image Content */}
-        <div className="flex-shrink-0 w-[550px] h-[350px] overflow-hidden">
-          <img
-            src={tabContent[activeTab].imageSrc}
-            alt={tabContent[activeTab].title}
-            className="w-full h-full object-cover rounded"
-          />
-        </div>
+      {/* Image Content */}
+      <div className="w-full lg:w-[550px] h-[200px] sm:h-[300px] lg:h-[350px] overflow-hidden">
+        <img
+          src={tabContent[activeTab].imageSrc}
+          alt={tabContent[activeTab].title}
+          className="w-full h-full object-cover rounded"
+        />
       </div>
     </div>
+  </div>
   );
 }
 

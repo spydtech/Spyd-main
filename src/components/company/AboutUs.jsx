@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from '../../components/Footer'
 
 const aboutusData = [
   {
@@ -33,17 +34,18 @@ const aboutusData = [
 const AboutUs = () => {
   return (
     <div className="font-serif">
-      <img src="src/assets/company/aboutus/hero.png" alt="aboutusHeroImg" className="w-full" />
-      <div>
-        <h1 className="text-center font-bold my-3 text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">WHO WE ARE</h1>
+      <img src="src/assets/company/aboutus/hero.png" alt="aboutusHeroImg" className="w-full h-44 lg:h-96" />
+      <div className="my-3">
+        <h1 className="text-center my-3 text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent">WHO WE ARE</h1>
         <ul className="mx-5 md:mx-10 lg:mx-20 space-y-3">
           {aboutusData.map((each) => (
             <li key={each.id}>
-              <p>{each.data}</p>
+              <p className="text-sm">{each.data}</p>
             </li>
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
   );
 };
