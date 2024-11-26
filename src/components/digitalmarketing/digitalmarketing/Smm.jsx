@@ -1,12 +1,13 @@
 import React from "react";
 import seoImage from "../../../assets/digitalmarketing/smm.png";
+import { Link } from "react-router-dom";
 function Ssm() {
   return (
     <>
-      <div className="mx-4 mt-4">
-        <div className=" flex justify-around items-center">
-          <div className="w-1/2 h-auto">
-            <p className="text-3xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
+      <div className="lg:mx-4 mt-4">
+        <div className=" flex lg:flex-row flex-col-reverse justify-around items-center">
+          <div className="lg:w-1/2 w-full p-2 h-auto">
+            <p className="lg:text-3xl text-xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
               Social Media Marketing (SMM)
             </p>
             <p className="">
@@ -23,9 +24,12 @@ function Ssm() {
               apart from competitors. Moreover, unique content encourages
               engagement, drives conversions, and improves your online presence.
             </p>
-            <button className="text-white mt-4 px-6 p-2 rounded-md  w-auto bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-xl ">
-              Read More
-            </button>
+
+            <Link to="/digitalmarketing/smm">
+              <button className=" mt-6 px-6 py-3 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg ">
+                Read More
+              </button>
+            </Link>
           </div>
           <div className="">
             <img className="float-end w-96 h-96" src={seoImage} />

@@ -3,14 +3,14 @@ import React from "react";
 function Ppc() {
   return (
     <>
-      <div className="lg:mt-10 my-4 mx-4">
+      <div className="lg:mt-10 my-4 mx-1 lg:mx-4">
         <div className="text-center">
           <p className="lg:text-3xl text-2xl bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
             PPC
           </p>
         </div>
 
-        <div className="text-xl mt-6 mx-6">
+        <div className=" text-lg lg:text-xl mt-6 mx-6">
           <p>
             PPC is an advertising service offered by search engines such as
             Google, Bing, Yahoo and social media platforms such as Facebook,

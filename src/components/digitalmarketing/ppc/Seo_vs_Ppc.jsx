@@ -20,7 +20,7 @@ function Seo_vs_Ppc() {
 
   const renderContent = (contentArray) =>
     contentArray.map((item, index) => (
-      <p key={index} className="flex leading-10">
+      <p key={index} className="flex leading-7 lg:leading-10">
         <span className="mr-2">
           <FaArrowRight className="text-white mt-2 w-8 h-6" />
         </span>
@@ -36,7 +36,7 @@ function Seo_vs_Ppc() {
         </p>
       </div>
 
-      <div className=" text-xl py-6 text-white bg-gradient-to-r from-[#00ceff] to-[#0072ff] grid grid-cols-2 mt-6 ">
+      <div className="text-md lg:text-xl py-6 text-white bg-gradient-to-r from-[#00ceff] to-[#0072ff] grid md:grid-cols-2 mt-6 ">
         <div className="mt-4 mx-auto">
           <h1 className="text-center pb-4">SEO</h1>
           {renderContent(seoContent)}

@@ -7,7 +7,7 @@ function digitalmarketing() {
     <>
       <div className="">
         <img
-          className="object-cover "
+          className="object-cover w-full "
           src={digitalmarketingimage}
           alt="digitalMarket"
         />

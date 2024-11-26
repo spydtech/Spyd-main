@@ -89,7 +89,7 @@ function MlLearning() {
       </div>
 
       {/* Educational Areas Section */}
-      <div className="bg-white md:px-0 px-5 py-8 sm:px-12 text-start max-w-6xl mx-auto">
+      <div className="bg-white md:px-10 px-5 py-8 sm:px-12 text-start max-w-6xl mx-auto">
         <h2 className="text-xl sm:text-2xl text-blue-600 mb-4">The four areas of machine learning education</h2>
         <p className="text-gray-700 text-sm sm:text-base mb-6">
           When beginning your educational path, it's important to first understand how to learn ML. We've broken the learning process into four areas of knowledge, each providing a foundational piece of the ML puzzle. Our guided curriculums and resource library will help you build essential skills.
@@ -119,7 +119,7 @@ function MlLearning() {
       {/* Main Container */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Text Content */}
-        <div className="space-y-6 px-4 md:px-0">
+        <div className="space-y-6 px-4 md:px-4">
           {/* Predictive Analytics */}
           <div>
             <h3 className="text-lg md:text-xl text-blue-500">Predictive Analytics</h3>

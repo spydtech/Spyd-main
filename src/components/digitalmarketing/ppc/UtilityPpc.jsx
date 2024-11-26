@@ -3,13 +3,13 @@ import ppc from "../../../assets/digitalmarketing/ppc/utilityppc.png";
 function UtilityPpc() {
   return (
     <>
-      <div className="mx-4 ">
-        <div className=" flex justify-around items-center">
+      <div className="lg:mx-4 mt-4">
+        <div className=" flex lg:flex-row flex-col justify-around items-center">
           <div className="">
             <img className="float-end w-96 h-96" src={ppc} />
           </div>
-          <div className="w-1/2 h-auto">
-            <p className="text-3xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
+          <div className="lg:w-1/2 w-full p-2 h-auto">
+            <p className="lg:text-3xl text-xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
               Utilize Pay Per Click Advertising and Benefit from Consumer Search
               Opportunities.
             </p>

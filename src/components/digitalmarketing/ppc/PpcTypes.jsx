@@ -2,7 +2,7 @@ import React from "react";
 
 function PpcTypes() {
   return (
-    <div className="lg:mt-10 my-4 py-10 px-4 bg-gradient-to-r from-[#00ceff] to-[#0072ff] ">
+    <div className="lg:mt-10 my-4 py-10 px-1 lg:px-4 bg-gradient-to-r from-[#00ceff] to-[#0072ff] ">
       <div className="text-center">
         <p className="lg:text-3xl text-2xl text-white">
           What are the different types of PPC Advertising?

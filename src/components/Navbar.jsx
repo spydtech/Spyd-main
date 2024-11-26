@@ -350,6 +350,7 @@ import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 import PodcastsOutlinedIcon from "@mui/icons-material/PodcastsOutlined";
 import DvrOutlinedIcon from "@mui/icons-material/DvrOutlined";
 import ModelTrainingIcon from "@mui/icons-material/ModelTraining";
+import { Link } from "react-router-dom"
 
 import { FaPerson } from "react-icons/fa6";
 
@@ -458,7 +459,7 @@ function Navbar() {
               key={index}
               onMouseEnter={() => item.hasDropdown && setDropdownOpenFor(item.name)}
               onMouseLeave={() => item.hasDropdown && setDropdownOpenFor(null)}
-              className={`relative font-semibold px-3 py-2 rounded cursor-pointer ${
+              className={`relative  px-3 py-2 rounded cursor-pointer ${
                 activeIndex === index
                   ? "bg-blue-600 text-white"
                   : "text-blue-600"
@@ -486,26 +487,37 @@ function Navbar() {
                 >
                 {item.name === "Company" && (
   <ul className="flex flex-row text-blue-600 space-y-2 p-4">
-    <li className="flex items-center gap-3 py-2 px-4 rounded hover:bg-gray-100 cursor-pointer">
+    <Link to="/aboutus">
+    <li className="flex mt-2 items-center gap-3 py-2 px-4 rounded hover:bg-gray-100 cursor-pointer">
       <GroupsOutlinedIcon className="text-blue-500" />
       <span>About Us</span>
     </li>
+    </Link>
+    <Link to="/vision-and-mission">
     <li className="flex items-center gap-3 py-2 px-4 rounded hover:bg-gray-100 cursor-pointer">
       <PodcastsOutlinedIcon className="text-blue-500" />
       <span>Vision & Mission</span>
     </li>
+    </Link>
+    <Link to="/whatmakeus-different">
     <li className="flex items-center gap-3 py-2 px-4 rounded hover:bg-gray-100 cursor-pointer">
       <DvrOutlinedIcon className="text-blue-500" />
       <span>What Makes Us Different</span>
     </li>
+    </Link>
+    <Link to="/ourcore-values">
     <li className="flex items-center gap-3 py-2 px-4 rounded hover:bg-gray-100 cursor-pointer">
       <ModelTrainingIcon className="text-blue-500" />
       <span>Our Core Values</span>
     </li>
+    </Link>
+    <Link to="/staffingservices">
     <li className="flex items-center gap-3 py-2 px-4 rounded hover:bg-gray-100 cursor-pointer">
       <FaPerson className="text-blue-500" />
       <span>Staffing & Services</span>
     </li>
+    </Link>
+    
   </ul>
 )}
 
@@ -517,7 +529,7 @@ function Navbar() {
                 >
                   {services.map((service, idx) => (
                     <div key={idx}>
-                      <h3 className="font-bold text-blue-600 mb-2">
+                      <h3 className=" text-blue-600 mb-2">
                         <FontAwesomeIcon icon={service.icon} className="mr-2" />
                         {service.title}
                       </h3>

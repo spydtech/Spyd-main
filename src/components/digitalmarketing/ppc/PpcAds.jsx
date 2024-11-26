@@ -76,9 +76,9 @@ function PpcAds() {
         height: "auto", // Full height
       }}
     >
-      <div className="flex mx-10 p-6 mt-10">
+      <div className="flex flex-col lg:flex-row lg:mx-10 lg:p-6 mx-2 p-2 my-10">
         {/* Left Side: Buttons */}
-        <div className="w-1/4 space-y-2">
+        <div className="w-1/4 space-y-2 pb-20 lg:pb-0">
           {Object.keys(content).map((key) => (
             <button
               key={key}
