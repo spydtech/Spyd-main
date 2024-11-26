@@ -24,10 +24,10 @@ const BackendDevelopment = () => {
     <div
       style={{
         backgroundImage: `url(${bgimage})`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "auto",
+        height: "100vh",
       }}
       className="bg-[#0866e2] text-white p-6 sm:p-8 lg:p-12"
     >

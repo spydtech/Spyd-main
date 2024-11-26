@@ -1,5 +1,5 @@
 import React from "react";
-
+import bgimage from "../../../assets/backend/java/bgimage.png";
 const JavaOffers = () => {
   const capabilities = [
     "Streamlining web application development.",
@@ -11,8 +11,17 @@ const JavaOffers = () => {
   ];
 
   return (
-    <div className="bg-blue-500 text-white p-6 sm:p-8 lg:p-12 ">
-      <h2 className="text-center text-xl sm:text-2xl lg:text-3xl font-semibold mb-8">
+    <div
+      style={{
+        backgroundImage: `url(${bgimage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "auto",
+      }}
+      className="bg-[#0866e2] text-white p-6 sm:p-8 lg:p-12  "
+    >
+      <h2 className="text-center text-xl sm:text-2xl lg:text-3xl  mb-8">
         THE CAPABILITIES OFFERED BY JAVA ENCOMPASS
       </h2>
       <div className="flex pl-10 flex-col gap-4">
