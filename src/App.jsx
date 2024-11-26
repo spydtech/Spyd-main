@@ -30,6 +30,38 @@ import Aws from "./components/OtherTech/CloudTech/Aws";
 
 import Carrers from "./components/carrers/CarrersMain";
 
+import AdvancedTech from "./components/OtherTech/AdvnacedTech";
+import Frontend from "./components/frontend/Frontend";
+import Angular from "./components/frontend/Angular";
+import NextJs from "./components/frontend/NextJs";
+import React from "./components/frontend/ReactJs";
+
+
+// Microsoft
+import ServicesHome from "./components/microsoft/services/ServicesHome";
+import Services from "./components/microsoft/CRM/Services";
+import PowerBi from "./components/microsoft/powerbi/PowerBi"
+
+
+// ERPNext
+import ERPNextConsultancy from "./components/ERPNext/ERPNextConsultancy";
+import ERPimpPage from "./components/ERPNext/ERPimpPage";
+import ERPfaq from "./components/ERPNext/ERPfaq";
+              
+
+import ERPServices from "./components/ERPNext/ERPServices";
+import AboutUs from "./components/company/AboutUs";
+import OurCoreValues from "./components/company/OurCoreValues";
+import VisionAndMission from "./components/company/VisionAndMission";
+import WhatMakesUsDifferent from "./components/company/WhatMakesUsDifferent";
+import StaffingServices from "./components/company/staffingServices/StaffingServices";
+
+import Backend from "./components/backend/BackendMain";
+import JavaMain from "./components/backend/java/JavaMain";
+import PhpMain from "./components/backend/php/PhpMain";
+import PythonMain from "./components/backend/python/PythonMain";
+
+
 function App() {
   return (
 
