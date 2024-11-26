@@ -1,15 +1,15 @@
 import React from "react";
 
 const cardData = [
-  { id: 1, icon: "⚙️", title: "Development Skills" },
-  { id: 2, icon: "📄", title: "Development Skills" },
-  { id: 3, icon: "🖥️", title: "Development Skills" },
+  { id: 1, icon: "🔗", title: "API Development" },
+  { id: 2, icon: "📊", title: "Data Visualization" },
+  { id: 3, icon: "🤖", title: "AI Integration" },
 ];
 
 const PythonCards = () => {
   return (
-    <div className="py-10">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="py-10 flex justify-center">
+      <div className="max-w-5xl mx-auto grid grid-cols-1  lg:grid-cols-3 gap-6">
         {cardData.map((card) => (
           <div
             key={card.id}

@@ -5,7 +5,7 @@ function BackendImage() {
     <>
       <div className="">
         <img
-          className="object-cover w-full h-44 lg:h-96"
+          className="object-cover  w-full h-44 lg:h-96"
           src={backend}
           alt="backend"
         />

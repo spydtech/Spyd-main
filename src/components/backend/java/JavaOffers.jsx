@@ -21,10 +21,10 @@ const JavaOffers = () => {
       }}
       className="bg-[#0866e2] text-white p-6 sm:p-8 lg:p-12  "
     >
-      <h2 className="text-center text-xl sm:text-2xl lg:text-3xl  mb-8">
+      <h2 className="text-center text-xl  lg:text-3xl  mb-8">
         THE CAPABILITIES OFFERED BY JAVA ENCOMPASS
       </h2>
-      <div className="flex pl-10 flex-col gap-4">
+      <div className="flex lg:pl-10 flex-col gap-4">
         {capabilities.map((capability, index) => (
           <div
             key={index}
