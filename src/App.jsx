@@ -20,6 +20,10 @@ import AiandMl from "./components/OtherTechnology/Ai&Ml/AiandMl";
 import Aws from "./components/OtherTechnology/CloudTech/Aws";
 
 import Carrers from "./components/carrers/CarrersMain";
+import Backend from "./components/backend/BackendMain";
+import JavaMain from "./components/backend/java/JavaMain";
+import PhpMain from "./components/backend/php/PhpMain";
+import PythonMain from "./components/backend/python/PythonMain";
 
 function App() {
   return (
@@ -50,6 +54,13 @@ function App() {
               <Route path="/digitalmarketing/em" element={<EmailMarketing />} />
 
               <Route path="/carrers" element={<Carrers />} />
+              <Route path="/backend" element={<Backend />} />
+              <Route path="/backend/javadevelopment" element={<JavaMain />} />
+              <Route path="/backend/php" element={<PhpMain />} />
+              <Route
+                path="/backend/pythondevelopment"
+                element={<PythonMain />}
+              />
             </Routes>
           </div>
         </Router>
