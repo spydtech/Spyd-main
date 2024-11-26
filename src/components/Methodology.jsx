@@ -8,7 +8,7 @@ function Methodology() {
 
       {/* Banner */}
       <div className="text-center max-w-4xl z-10">
-        <h1 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-6">
+        <h1 className="text-lg md:text-3xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent md:mb-6">
           We are a one-stop, full-service, and turnkey solutions provider for
           Web, Mobility and Digital Marketing Services.
         </h1>
@@ -24,11 +24,11 @@ function Methodology() {
       </div>
 
       {/* Methodology Section */}
-      <div className="text-center max-w-3xl mt-8 z-10">
-        <h2 className="text-2xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
+      <div className="text-center max-w-3xl md:mt-8 z-10">
+        <h2 className="md:text-2xl text-lg font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
           Our Methodology for Website Design
         </h2>
-        <p className="text-gray-700 leading-relaxed">
+        <p className="text-gray-700 leading-relaxed md:text-lg text-sm">
           Crafting a website that aligns with your distinct business objectives. Explore our meticulous design process,
           meticulously designed to deliver tailor-made and goal-centric digital solutions.
         </p>
