@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import DigitalMarketing from "./digitalmarketing";
 import MarketingStrategy from "./MarketingStrategy";
 import Seo from "./Seo";
@@ -11,6 +11,9 @@ import CallToAction from "../../CallToAction";
 import Footer from "../../Footer";
 
 function Main() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <DigitalMarketing />

@@ -1,26 +1,76 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import bgimage1 from "../../../assets/Crm/dynamic/bgimage1.png";
+import image2 from "../../../assets/Crm/dynamic/image2.png";
 
-function GetStartedInfo(){
-    return(
-        <div className="overflow-hidden">
-            <div className="text-center mt-[50px]">
+function GetStartedInfo() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
 
-                    <h1 className=" ml-[150px] mr-[400px] w-[1200px] text-[30px] text-Cambo text-normal text-[#0866E2]">Unlock the full potential of your customer relationships with Microsoft Dynamics CRM by Spyd Technology. Get Started Today!</h1>
-                    <p className="ml-[200px] mt-[30px] w-[1000px] text-[22px] text-Cambo text-normal text-[#141414]">Contact us today to learn more about our tailored solutions and start driving meaningful business outcomes.</p>
-                    <button className="mt-[30px] text-Cambo rounded-[5px] w-[190px] h-[50px] text-[#00CEFF] bg-[#ffffff]">Get Started Now</button>
-            </div>
-                    
-            <div className="
-                 mt-[-1010px] bg-no-repeat h-[1100px] bg-cover bg-[url('https://s3-alpha-sig.figma.com/img/d207/9d5a/232e66597bb51d3ad4f03e7652c78e7c?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BClPWmbJIS6gjZ8zrnOK1fxUYFv9XJTG9NUBu5JqK7qx-1koFFynvtN~BeR0nH0XCQ8mru7EWw5qHCT0VEa0aZpWFZXj9kIYfIC7wrX2nAa1KTmRBxDrqJ3IqqOxwqN3MDLJasjd7t20zA618H9nnVw7jSyUKsTyGyg-r-qIHPmW2hWLFV~g9FusAlRbjomDtGg~aYSs2-JnqG7fT0OGR7rLMyjsspgkwFoy--5piW8KuBnvaYFT2e-IGeubhBmnO9R0WxH1hxTQhyqtc9KwKArOOsOYDhB2lkjCPCMIkwdAs~FCppm51oUVHafaHhYrONOYGH89vs5ltH-QFPfDbg__')]">
-                       
-                        
-                        
-                    
-             </div>
+  return (
+    <div
+      className="relative overflow-hidden  flex flex-col  "
+      style={{
+        backgroundImage: `url(${bgimage1})`,
+            backgroundSize: "cover",
+        backgroundPosition: "bottom center",
+      }}
+    >
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0"></div>
+
+      {/* Flex Section for Text and Image */}
+      <div className="relative z-10 flex flex-col lg:flex-row lg:gap-24 lg:px-24 lg:pt-16 px-8 bg-transparent">
+        <div className="lg:w-2/5">
+          <h2 
+          data-aos="fade-right"
+          className="text-lg lg:text-2xl text-[#00CEFF] font-semibold">
+            SpY D Technology Experience Transformation
+          </h2>
+          <p 
+          data-aos="fade-right"
+          className="mt-4 lg:mt-6 text-sm lg:text-lg text-[#333333] text-justify">
+            With more than a decade of experience, our CRM Development India team has achieved a new height of unprecedented success through our CRM solutions and services. We help explore a new dimension in customer service by leveraging CRM platforms to support various relationship scenarios.
+          </p>
         </div>
-        
+        <img
+        data-aos="fade-up"
+          className="mt-8 lg:mt-0 lg:h-[300px] lg:w-[320px] w-full max-w-xs lg:max-w-none object-contain"
+         src={image2}
+          alt="CRM Illustration"
+        />
+      </div>
 
-    )
+      {/* Call to Action Section */}
+      <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 py-12 bg-transparent">
+        <h1 
+        data-aos="fade-right"
+        className="text-sm lg:text-4xl text-[#0866E2]">
+        Unlock the full potential of your customer relationships with 
+        </h1>
+        <h1 
+        data-aos="fade-right"
+        className="text-sm lg:text-4xl text-[#0866E2]">
+        Microsoft Dynamics CRM by Spyd Technology. 
+        Get Started Today!
+        </h1>
+        <p 
+        data-aos="fade-right"
+        className="mt-6 text-[16px] sm:text-[18px] md:text-[20px] lg:text-2xl text-[#141414] mx-auto w-full  lg:w-3/4">
+          Contact us today to learn more about our tailored solutions and start driving meaningful business outcomes.
+        </p>
+        <button 
+        data-aos="fade-up"
+        className="mt-8 text-[#00CEFF] bg-white border rounded-lg shadow-t-lg lg:px-10 lg:py-5  text-lg sm:text-xl lg:text-sm mx-auto hover:bg-[#00b3ff] hover:text-white transition duration-300">
+          Get Started Now
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default GetStartedInfo
+export default GetStartedInfo;

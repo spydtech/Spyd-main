@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ppcimage from "../../../assets/digitalmarketing/ppc/adsppc.png";
 function PpcAdvertising() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <div className="lg:mx-4 mt-4">
         <div className=" flex lg:flex-row flex-col-reverse justify-around items-center">
           <div className="lg:w-1/2 w-full p-2 h-auto">
             <p className="lg:text-3xl text-xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
-              <p className="text-3xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
+              <p 
+               data-aos="fade-right"
+               className="text-3xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
                 What is PPC?
               </p>
             </p>
-            <p className="">
+            <p 
+             data-aos="fade-right"
+            className="">
               Pay per click advertising is a type of paid search strategy that
               is utilized to increase brand recognition, showcase brand
               products, and attract targeted audience members quickly. PPC
@@ -25,7 +37,9 @@ function PpcAdvertising() {
             </p>
           </div>
           <div className="">
-            <img className="float-end w-96 h-96" src={ppcimage} />
+            <img 
+             data-aos="fade-up"
+            className="float-end w-96 h-96" src={ppcimage} />
           </div>
         </div>
       </div>

@@ -1,18 +1,21 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import ServicesTopSection from "./ServicesTopSection";
 import ServiceGroupsSection from "./ServiceGroupsSection";
 import OurServices from "./OurServices";
 import ServiceMicrosoftSection from "./ServiceMicrisoftSection";
 import ServiceKeyBenefits from "./ServiceKeyBenefits";
-import ServiceTechTransform from "./ServiceTechTransform";
+// import ServiceTechTransform from "./ServiceTechTransform";
 import GetStartedInfo from "./GetStartedInfo";
-import CallToAction from './CallToAction'
-
+import CallToAction from '../../CallToAction'
+import Footer from "../../Footer"
 
 
 
 function Services() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return(
         <div>
         <ServicesTopSection/>
@@ -20,10 +23,10 @@ function Services() {
         <OurServices/>
         <ServiceMicrosoftSection/>
         <ServiceKeyBenefits/>
-        <ServiceTechTransform/>
+        {/* <ServiceTechTransform/> */}
         <GetStartedInfo/>
         <CallToAction />
-        {/* <Footer /> */}
+        <Footer />
         </div>
     )
 }

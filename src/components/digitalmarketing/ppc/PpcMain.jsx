@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import PpcImage from "./PpcImage";
 import Ppc from "./Ppc";
 import Seo_vs_Ppc from "./Seo_vs_Ppc";
@@ -9,6 +9,9 @@ import PpcAds from "./PpcAds";
 import CallToAction from "../../CallToAction";
 import Footer from "../../Footer";
 function PpcMain() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <PpcImage />

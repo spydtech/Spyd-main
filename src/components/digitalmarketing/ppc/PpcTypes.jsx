@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function PpcTypes() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="lg:mt-10 my-4 py-10 px-1 lg:px-4 bg-gradient-to-r from-[#00ceff] to-[#0072ff] ">
       <div className="text-center">
-        <p className="lg:text-3xl text-2xl text-white">
+        <p 
+        data-aos="flip-up"
+        className="lg:text-3xl text-2xl text-white">
           What are the different types of PPC Advertising?
         </p>
       </div>
 
-      <div className=" px-6 text-xl py-6 text-white  mt-6 ">
+      <div 
+      data-aos="flip-up"
+      className=" px-6 text-xl py-6 text-white  mt-6 ">
         <div className="">
           {" "}
           Now that you know what paid search is, the next thing to do is

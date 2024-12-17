@@ -1,4 +1,6 @@
-import { useState } from "react";
+import {useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ads from "../../../assets/digitalmarketing/ppc/ads.png"; // Background image
 import amazon from "../../../assets/digitalmarketing/ppc/adsTypes/amazon.png";
 import display from "../../../assets/digitalmarketing/ppc/adsTypes/display.png";
@@ -11,7 +13,11 @@ import streams from "../../../assets/digitalmarketing/ppc/adsTypes/streams.png";
 
 function PpcAds() {
   const [selectedOption, setSelectedOption] = useState("search"); // Default to 'search'
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const content = {
     search: {
       heading: "Search Ads",
@@ -81,6 +87,7 @@ function PpcAds() {
         <div className="w-1/4 space-y-2 pb-20 lg:pb-0">
           {Object.keys(content).map((key) => (
             <button
+            data-aos="fade-right"
               key={key}
               className={`block p-4 text-xl rounded-md w-60 ${
                 selectedOption === key
@@ -98,16 +105,21 @@ function PpcAds() {
         <div className="w-3/4 ml-8 flex flex-col">
           <div className="flex">
             <img
+            data-aos="fade-right"
               src={content[selectedOption].image}
               alt={content[selectedOption].heading}
               className="w-[80px] h-[80px] mr-6"
             />
-            <h2 className="text-3xl bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text pt-6 font-bold">
+            <h2 
+            data-aos="fade-right"
+            className="text-3xl bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text pt-6 font-bold">
               {content[selectedOption].heading}
             </h2>
           </div>
 
-          <div className="">
+          <div 
+          data-aos="fade-right"
+          className="">
             <p className="mt-4 text-xl">
               {content[selectedOption].description}
             </p>

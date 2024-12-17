@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import audit from "../../../assets/digitalmarketing/socialmediamarketing/services/audit.png";
 import analytics from "../../../assets/digitalmarketing/socialmediamarketing/services/analytics.png";
 import accounts from "../../../assets/digitalmarketing/socialmediamarketing/services/account.png";
@@ -6,6 +8,12 @@ import community from "../../../assets/digitalmarketing/socialmediamarketing/ser
 import content from "../../../assets/digitalmarketing/socialmediamarketing/services/content.png";
 import strategy from "../../../assets/digitalmarketing/socialmediamarketing/services/strategy.png";
 const SsmCards = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const services = [
     {
       title: "Social media audit",
@@ -49,20 +57,28 @@ const SsmCards = () => {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 lg:gap-10">
         {services.map((service, index) => (
-          <div key={index} className=" h-80  rounded-lg text-center ">
+          <div 
+          data-aos="fade-right"
+          key={index} className=" h-80  rounded-lg text-center ">
             {/* Icon container */}
             <div className="flex justify-center    mb-4 ">
               <div className="flex h-20 w-20 absolute items-center justify-center bg-gradient-to-r from-[#00ceff] to-[#0072ff] rounded-full border-2 border-black text-4xl text-white">
-                <img className="p-1" src={service.icon} />
+                <img
+                data-aos="fade-down"
+                className="p-1" src={service.icon} />
               </div>
             </div>
 
             {/* Card content */}
-            <div className="lg:py-10 py-4 h-[350px] lg:h-[300px] px-4 pb-10 mt-10  shadow-lg border-black  rounded-lg   border-2 flex flex-col justify-between">
-              <h3 className="text-2xl pt-5 font-semibold bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
+            <div className="lg:py-10 py-4 h-[350px] lg:h-[300px] px-4 pb-10 mt-10  shadow-lg border-black  rounded-lg  hover:border-b-[10px]  border-2 flex flex-col justify-between">
+              <h3
+              data-aos="fade-right"
+              className="text-2xl pt-5 font-semibold bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
                 {service.title}
               </h3>
-              <p className=" text-lg ">{service.description}</p>
+              <p 
+              data-aos="fade-right"
+              className=" text-lg ">{service.description}</p>
             </div>
           </div>
         ))}

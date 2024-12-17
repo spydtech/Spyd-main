@@ -1,6 +1,7 @@
 import React from 'react';
 import poster from "./../../assets/ERPNext/contact1.png"
 import poster2 from "./../../assets/ERPNext/contact2.png"
+import Footer from '../Footer';
 const ContactPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -10,8 +11,8 @@ const ContactPage = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:gap-6 p-2 lg:p-4">
           {/* Left: Text Content */}
           <div className="text-white  p-12 place-items-end lg:text-left lg:w-1/3">
-            <h1 className="text-3xl lg:text-4xl font-semibold mb-4">Meet The Team</h1>
-            <p className="text-lg max-w-60 lg:text-xl break-words">
+            <h1 className="text-xl sm:text-2xl lg:text-4xl text-nowrap mb-4">Meet The Team</h1>
+            <p className="text-sm sm:text-lg max-w-60 lg:text-xl break-words">
               A Meet The Team Page Is A Page Where Companies Can Introduce Their
               Employees To Site Visitors And Showcase The Highlights Of Their
               Organization's Personnel.
@@ -31,8 +32,8 @@ const ContactPage = () => {
         <div className="flex w-full mb-6 lg:p-12 text-white">
           <div className=" w-1/2"></div>
           <div className="">
-            <h2 className="text-3xl text-center font-bold">Job Application</h2>
-            <p className="text-lg mt-2 text-black">
+            <h2 className="text-xl md:text-3xl text-center ">Job Application</h2>
+            <p className="text-sm md:text-lg mt-2 text-black">
               Please complete the form below to apply for a position with us
             </p>
           </div>
@@ -46,7 +47,7 @@ const ContactPage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 ">
               {/* First Name */}
               <div>
-                <label htmlFor="first-name" className="block text-sm font-medium text-black ">
+                <label htmlFor="first-name" className="block text-sm  text-black ">
                   First name
                 </label>
                 <input
@@ -58,7 +59,7 @@ const ContactPage = () => {
               </div>
               {/* Last Name */}
               <div>
-                <label htmlFor="last-name" className="block text-sm font-medium text-black">
+                <label htmlFor="last-name" className="block text-sm  text-black">
                   Last name
                 </label>
                 <input
@@ -70,7 +71,7 @@ const ContactPage = () => {
               </div>
               {/* Email Address */}
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-black">
+                <label htmlFor="email" className="block text-sm  text-black">
                   Email address
                 </label>
                 <input
@@ -82,7 +83,7 @@ const ContactPage = () => {
               </div>
               {/* Phone Number */}
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-black">
+                <label htmlFor="phone" className="block text-sm  text-black">
                   Phone number
                 </label>
                 <div className="flex flex-col sm:flex-row items-center gap-2 mt-1">
@@ -101,7 +102,7 @@ const ContactPage = () => {
               </div>
               {/* LinkedIn */}
               <div>
-                <label htmlFor="linkedin" className="block text-sm font-medium text-black">
+                <label htmlFor="linkedin" className="block text-sm  text-black">
                   LinkedIn
                 </label>
                 <input
@@ -113,7 +114,7 @@ const ContactPage = () => {
               </div>
               {/* Position Applied */}
               <div>
-                <label htmlFor="position" className="block text-sm font-medium text-black">
+                <label htmlFor="position" className="block text-sm  text-black">
                   Position Applied
                 </label>
                 <select
@@ -128,7 +129,7 @@ const ContactPage = () => {
               </div>
               {/* How did you hear about us */}
               <div>
-                <label htmlFor="referral" className="block text-sm font-medium text-black">
+                <label htmlFor="referral" className="block text-sm  text-black">
                   How did you hear about us
                 </label>
                 <select
@@ -143,7 +144,7 @@ const ContactPage = () => {
               </div>
               {/* Resume */}
               <div>
-                <label htmlFor="resume" className="block text-sm font-medium text-black">
+                <label htmlFor="resume" className="block text-sm  text-black">
                   Resume
                 </label>
                 <input
@@ -155,7 +156,7 @@ const ContactPage = () => {
             </div>
             {/* Cover Letter */}
             <div className="mt-4">
-              <label htmlFor="cover-letter" className="block text-sm font-medium text-black">
+              <label htmlFor="cover-letter" className="block text-sm  text-black">
                 Cover Letter
               </label>
               <textarea
@@ -183,12 +184,13 @@ const ContactPage = () => {
             alt="Journey"
             className="mb-4 w-3/4"
           />
-          <h2 className="text-xl font-bold">Embark on a Journey with Us</h2>
+          <h2 className="text-lg lg:text-xl">Embark on a Journey with Us</h2>
           <p className="text-center text-gray-800 mt-2">
             Unleash the full potential of our platform by sharing a bit about yourself. Your journey begins here – let’s make it extraordinary together!
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

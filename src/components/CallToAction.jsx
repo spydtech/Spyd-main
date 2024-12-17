@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function CallToAction() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className="bg-gray-50 py-10">
-    <div className="max-w-4xl mx-auto text-center px-4 sm:px-0">
+    <div className="max-w-4xl mx-auto text-center px-4 sm:px-0"
+    data-aos="fade-right">
     <h2 className="md:text-3xl  text-xl  bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent">
     Let’s Ignite Conversations in the World of Innovative Technology!
   </h2>
@@ -14,7 +23,9 @@ function CallToAction() {
         Read More
       </button>
     </div>
-    <p className="text-center text-sm text-blue-500 mt-8">
+    <p className="text-center text-sm text-blue-500 mt-8"
+    data-aos="fade-up"
+    >
       We make an impact, we live by it in everything we do. Every work we do, project, and interaction we create must function smoothly, too. Obsessed with perfection.
     </p>
   </div>

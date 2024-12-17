@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos"; // Import AOS here
+import "aos/dist/aos.css";
 
 const technicalSkills = [
   {
@@ -27,34 +29,48 @@ const technicalSkills = [
 ];
 
 const PhpTechnicalSkills = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <section className=" text-white py-10 px-4 sm:px-8 lg:px-16">
+    <section className=" text-white py-10 px-1 sm:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl text-[#00ceff]">
+        <h2 
+        data-aos="zoom-in-up"
+        className="text-2xl sm:text-3xl text-[#00ceff]">
           Technical Skills Of Our Dedicated PHP Developers
         </h2>
-        <p className="text-black text-lg mt-4">
+        <p 
+        data-aos="zoom-in-up"
+        className="text-black text-lg mt-4">
           Our offshore PHP programmers are adept with all the modern development
           tools and well-versed with the latest PHP version updates
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-          {technicalSkills.map((skill, index) => (
-            <div
-              key={index}
-              className="bg-[#0866e2] w-[300px] h-[340px] rounded-lg shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
-            >
-              <h3 className="text-xl  mb-4">{skill.title}</h3>
-              <div className="text-4xl mb-4">{skill.icon}</div>
+        <div className="flex justify-center">
+          <div 
+          data-aos="fade-right"
+          className="grid grid-cols-1 justify-center  lg:grid-cols-3 gap-6 mt-8">
+            {technicalSkills.map((skill, index) => (
+              <div
+                key={index}
+                className="bg-[#0866e2] w-[300px] sm:w-[350px] lg:w-[300px] h-[340px] rounded-lg shadow-lg p-6 flex flex-col items-center hover:shadow-2xl transition-shadow duration-300"
+              >
+                <h3 className="text-xl  mb-4">{skill.title}</h3>
+                <div className="text-4xl mb-4">{skill.icon}</div>
 
-              <ul className="text-left mt-2 space-y-2">
-                {skill.details.map((detail, i) => (
-                  <li key={i} className=" text-lg text-white">
-                    - {detail}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                <ul className="text-left mt-2 space-y-2">
+                  {skill.details.map((detail, i) => (
+                    <li key={i} className=" text-lg text-white">
+                      - {detail}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

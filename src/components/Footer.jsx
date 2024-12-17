@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { LuMapPin } from "react-icons/lu";
 import { FaRegAddressCard } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import logo from "../assets/Home/logo.png"
 
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <footer className="bg-gradient-to-r from-[#38bdf8] to-blue-700 text-white py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,20 +22,26 @@ const Footer = () => {
         
 
         {/* Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative" 
+        data-aos="fade-up"
+        >
           {/* Vertical Line Between Columns */}
           <div className="absolute inset-y-0 left-1/4 w-px bg-blue-300 hidden md:block h-[250px] "></div>
           <div className="absolute inset-y-0 left-1/2 w-px bg-blue-300 hidden md:block h-[250px]"></div>
           <div className="absolute inset-y-0 right-1/4 w-px bg-blue-300 hidden md:block h-[250px]"></div>
 
           {/* Column 1: Company Info */}
-          <div className="space-y-10">
+          <div className="space-y-10"
+          data-aos="fade-up"
+          >
           <img 
-          src="https://s3-alpha-sig.figma.com/img/6afd/6969/7f4008740e9cb8e93ea7c495aeef6cdc?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S1Q37h-RnsB0cNvstrzDggGXoCrOmMyFhQ2squMJ8YUNzRdZuH7AeutSjIQvtiTbOZy6~6TZc87nnIpC8cECwp0U40pZYQbk79aUcSuY1Q8oab5FUXn0ncY~HrSPjjgFlpGzWIFKzYvg74F4dHICjt3S277LXGiEKLeLAaRXh~-S~9v~qpcX1PMRjC60AKcFqWHxXXYTHsS4rYWqdILdlB5r--uB8M~ieSDQqNhIzkVSnmZFBO3d~bw5ZQjlWOYv3ZLq9cZAeR45IzbecCKlIUkuGgARCXkYUGXUfgDZG3aA37Bw7mj4ZssqXRN1hPGVXuyI-MGyuOAHou~6hy5QeA__"
-          alt="SpY D Technology" 
-          className="h-10  mr-2" 
+         src={logo}
+         alt="SpY D Technology" 
+          className="h-10  mr-2 " 
         />
-            <ul className="space-y-2">
+            <ul className="space-y-2" 
+            data-aos="fade-up"
+            >
               <li className="flex items-start">
                 <LuMapPin className="mr-2 -mt-2 text-5xl"></LuMapPin>
                 <p>Plot no-852, Meera Complex, Rd no-45, Madhapur, Hyderabad-81</p>
@@ -52,7 +67,9 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Main Links */}
-          <div className="ml-10">
+          <div className="ml-10" 
+          data-aos="fade-up"
+          >
             <h2 className="text-xl font-bold mb-4 ">Main</h2>
             <ul className="space-y-2">
               <li>
@@ -84,7 +101,9 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Services */}
-          <div className="ml-10">
+          <div className="ml-10" 
+          data-aos="fade-up"
+          >
             <h2 className="text-xl font-bold mb-4">Service</h2>
             <ul className="space-y-2">
               <li>
@@ -116,7 +135,9 @@ const Footer = () => {
           </div>
 
           {/* Column 4: Focus and Social Links */}
-          <div className="ml-10">
+          <div className="ml-10"
+          data-aos="fade-up"
+          >
             <h2 className="text-xl font-bold mb-4">Focus</h2>
             <ul className="space-y-2">
               <li>
@@ -176,7 +197,9 @@ const Footer = () => {
        
 
         {/* Footer Bottom */}
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center" 
+        data-aos="fade-up"
+        >
           <p>© 2024 SpY D Technology. All rights reserved.</p>
         </div>
       </div>

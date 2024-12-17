@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function JobOpenings() {
   const [selectedRole, setSelectedRole] = useState("javaDeveloper"); // Default role
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    }); // Initialize AOS for other animations if needed
+  }, []);
   const jobDetails = {
     javaDeveloper: {
       role: "Java Developer",
@@ -111,7 +118,9 @@ function JobOpenings() {
     <div className="min-h-screen p-6 mx-4 relative">
       <div className="flex flex-col lg:flex-row">
         {/* Left Side: Buttons */}
-        <div className="lg:w-[30%] w-auto mt-20 space-y-7">
+        <div className="lg:w-[30%] w-auto mt-20 space-y-7"
+        data-aos="fade-left"
+        >
           {Object.keys(jobDetails).map((key) => (
             <button
               key={key}
@@ -128,7 +137,9 @@ function JobOpenings() {
         </div>
 
         {/* Right Side: Job Details */}
-        <div className="lg:w-[50%] w-auto p-6 rounded-lg ml-2 lg:ml-auto">
+        <div className="lg:w-[50%] w-auto p-6 rounded-lg ml-2 lg:ml-auto"
+        data-aos="fade-right"
+        >
           <div className="text-center my-6 mx-10">
             <p className="lg:text-3xl text-xl bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
               Job Description
@@ -156,7 +167,9 @@ function JobOpenings() {
               ))}
             </ul>
           </div>
-          <div className="flex justify-start mt-4 items-center">
+          <div className="flex justify-start mt-4 items-center"
+          data-aos="fade-down"
+          >
             <button className="bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-white py-3 px-8 rounded-lg shadow-md">
               Apply Now
             </button>

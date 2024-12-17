@@ -4,9 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Cambo", "serif"], // Replace default sans font with Cambo
+        heading: ['Poppins', 'Montserrat', 'sans-serif'], // Specific combo for headings
+        body: ['Roboto', 'Source Sans Pro', 'sans-serif'], // Specific combo for body
+        sans: ['Cambo', 'serif'], // Sans font as default fallback
       },
     },
-  }, // <-- Add this closing bracket for the `theme` object
+  },
   plugins: [],
 };

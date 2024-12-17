@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 import amazon from "../../../assets/digitalmarketing/seo/logos/amazon.png";
 import content from "../../../assets/digitalmarketing/seo/logos/content.png";
 import cro from "../../../assets/digitalmarketing/seo/logos/cro.png";
@@ -14,6 +17,12 @@ import technical from "../../../assets/digitalmarketing/seo/logos/technical.png"
 
 function SeoServices() {
   const [hoveredCard, setHoveredCard] = useState(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
 
   const data = [
     {
@@ -93,14 +102,20 @@ function SeoServices() {
   return (
     <div className="lg:my-10 my-4 mx-1 md:mx-4">
       <div className="text-center mx-4">
-        <p className="py-4 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text text-3xl">
+        <p 
+        data-aos="flip-up"
+        className="py-4 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text text-3xl">
           Our SEO Services
         </p>
         <br />
-        <p className="py-4 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text text-2xl lg:text-3xl">
+        <p 
+        data-aos="flip-up"
+        className="py-4 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text text-2xl lg:text-3xl">
           Increase Your Search Rankings and Get Discovered More Online
         </p>
-        <p className="py-4 text-start text-xl">
+        <p 
+        data-aos="fade-right"
+        className="py-4 text-start text-xl">
           Discover the key to dominating search engine results and standing out
           in the digital landscape. SEO, or Search Engine Optimization, is the
           art and science of refining your website to achieve higher rankings
@@ -117,6 +132,8 @@ function SeoServices() {
         {data.map((item, index) => {
           return (
             <div
+
+            data-aos="flip-up"
               key={index}
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}

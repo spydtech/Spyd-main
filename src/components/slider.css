@@ -1,0 +1,12 @@
+@keyframes slideLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .animate-slideLeftToRight {
+    animation: slideLeftToRight 1s ease-in-out; /* Adjust the duration as needed */
+  }
+    

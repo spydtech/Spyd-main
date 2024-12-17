@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Navbar from './Navbar'
 import Hero from './Hero'
 import CarouselComponent from './CarouselComponent'
@@ -8,7 +8,8 @@ import TabSection from './TabSection'
 import OurWorks from './OurWorks'
 import Testimonials from './Testimonials'
 import CallToAction from './CallToAction'
-import Footer from './Footer'
+import Footer from './Footer';
+import Industry from "./Industry";
 import AboutUs from './company/AboutUs'
 import VisionAndMission from './company/VisionAndMission'
 import WhatMakesUsDifferent from './company/WhatMakesUsDifferent'
@@ -17,6 +18,9 @@ import StaffingServices from './company/staffingServices/StaffingServices'
 
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
         {/* <Navbar /> */}
@@ -26,7 +30,9 @@ function Home() {
         <Methodology />
         <TabSection />
         <OurWorks />
+        <Testimonials />
         <CallToAction />
+        <Industry />
         <Footer />
     </div>
   )

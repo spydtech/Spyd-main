@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Openings() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    }); // Initialize AOS for other animations if needed
+  }, []);
   return (
     <>
-      <div className="text-center my-10 mx-10">
+      <div className="text-center my-10 mx-10"
+      data-aos="fade-down"
+      >
         <p className="lg:text-4xl text-xl bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
           Openings
         </p>

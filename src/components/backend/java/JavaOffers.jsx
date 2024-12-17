@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos"; // Import AOS here
+import "aos/dist/aos.css";
 import bgimage from "../../../assets/backend/java/bgimage.png";
 const JavaOffers = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const capabilities = [
     "Streamlining web application development.",
     "Providing support for plug-in development.",
@@ -21,12 +29,15 @@ const JavaOffers = () => {
       }}
       className="bg-[#0866e2] text-white p-6 sm:p-8 lg:p-12  "
     >
-      <h2 className="text-center text-xl sm:text-2xl lg:text-3xl  mb-8">
+      <h2 
+      data-aos="flip-up"
+      className="text-center text-xl  lg:text-3xl  mb-8">
         THE CAPABILITIES OFFERED BY JAVA ENCOMPASS
       </h2>
-      <div className="flex pl-10 flex-col gap-4">
+      <div className="flex lg:pl-10 flex-col gap-4">
         {capabilities.map((capability, index) => (
           <div
+          data-aos="fade-right"
             key={index}
             className="flex items-center text-sm sm:text-base lg:text-lg"
           >

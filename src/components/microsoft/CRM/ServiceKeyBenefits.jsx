@@ -1,40 +1,57 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { MdPlayArrow } from "react-icons/md";
+import image1 from "../../../assets/Crm/dynamic/image1.png";
 
-function ServiceKeyBenefits(){
-    return(
-        <div className="flex ml-[180px]">
-            <img className="w-[330px] h-[400px] mt-[10px]" src="https://s3-alpha-sig.figma.com/img/18e1/b94d/5a8fdddc454f9a896e1eefdb08d70f60?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UBfgUGWaf3o8ARmxMz5e9f2fAScFFjT-5q0xfPsGz2lPbj3bqfNZJ~Bp7hHoCvXMo4D0LWSUDKXybgY5XYS5o46dh4fpA5gzoXWz2-oAYjFWa5lMUmnhYUCWmqFgcwmSBiRBNn5Ime4-ehcP74aroni2m9HS~oAWWlUjZd6Lt7I4mPnN-lw9RZZ5HjdJw-O7O2xwQQfg8SfsRmPHQpEpQprytrPgj5zdtwWHiIHqR~nV4LAw5PWKjGkx1LTUselCe3DxkoYfIdtn9TdeZHblsDLhnKTdEbSJ6OaHFCnEbJsbOLDDuON0pNI-FSRiErrqgCHkIWy8iwJtPkIude7IfQ__" alt="" />
-            <div className="leading-[60px] ml-[100px]">
-                <h1 className="text-[30px] text-Cambo text-normal text-[#00CEFF]">The key benefits of CRM solutions include</h1>
-                <div className="flex">
-                    <MdPlayArrow className="mt-[22px]"/>
-                    <p className="text-Cambo text-[18px]">Pay-as-you-go pricing model</p>
-                </div>
-                <div className="flex">
-                    <MdPlayArrow className="mt-[22px]"/>
-                    <p className="text-Cambo text-[18px]">Dedicated API for each service offered</p>
-                </div>
-                <div className="flex">
-                    <MdPlayArrow className="mt-[22px]"/>
-                    <p className="text-Cambo text-[18px]">Increase profitability and efficiency</p>
-                </div>
-                <div className="flex">
-                    <MdPlayArrow className="mt-[22px]"/>
-                    <p className="text-Cambo text-[18px]">Seamless Database Management</p>
-                </div>
-                <div className="flex">
-                    <MdPlayArrow className="mt-[22px]"/>
-                    <p className="text-Cambo text-[18px]">Security through compliance program and highly secure data centers</p>
-                </div>
-                <div className="flex">
-                    <MdPlayArrow className="mt-[22px]"/>
-                    <p className="text-Cambo text-[18px]">Scalability regardless of application size</p>
-                </div>
+function ServiceKeyBenefits() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+  return (
+    <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center max-w-7xl mx-auto mt-8 sm:mt-12 px-4">
+      
+      {/* Image Section */}
+      <img 
+      data-aos="fade-up"
+        className="w-full max-w-[350px] h-auto object-cover mb-8 sm:mb-0 sm:mr-8" 
+        src={image1}
+        alt="CRM Benefits" 
+      />
+
+      {/* Text Section */}
+      <div className="sm:ml-8">
+        <h1 
+        data-aos="fade-down"
+        className="text-xl lg:text-2xl  text-[#00CEFF] text-center sm:text-left">
+          The key benefits of CRM solutions include
+        </h1>
+
+        {/* List of Benefits */}
+        <div className="mt-6 space-y-4">
+          {[
+            "Pay-as-you-go pricing model",
+            "Dedicated API for each service offered",
+            "Increase profitability and efficiency",
+            "Seamless Database Management",
+            "Security through compliance program and highly secure data centers",
+            "Scalability regardless of application size",
+          ].map((benefit, index) => (
+            <div
+            data-aos="fade-right"
+            key={index} className="flex items-center">
+              <MdPlayArrow className="text-[#00CEFF] text-2xl" />
+              <p className="ml-3 text-sm sm:text-base lg:text-lg text-gray-800">
+                {benefit}
+              </p>
             </div>
+          ))}
         </div>
-
-    )
+      </div>
+    </div>
+  );
 }
 
-export default ServiceKeyBenefits
+export default ServiceKeyBenefits;

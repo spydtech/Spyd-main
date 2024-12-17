@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import seoImage from "../../../assets/digitalmarketing/smm.png";
 import { Link } from "react-router-dom";
 function Ssm() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <div className="lg:mx-4 mt-4">
         <div className=" flex lg:flex-row flex-col-reverse justify-around items-center">
-          <div className="lg:w-1/2 w-full p-2 h-auto">
-            <p className="lg:text-3xl text-xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
+          <div 
+           data-aos="fade-left"
+          className="lg:w-1/2 w-full p-2 h-auto">
+            <p 
+             data-aos="fade-left"
+            className="lg:text-3xl text-xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
               Social Media Marketing (SMM)
             </p>
             <p className="">
@@ -25,14 +36,16 @@ function Ssm() {
               engagement, drives conversions, and improves your online presence.
             </p>
 
-            <Link to="/digitalmarketing/smm">
+            <Link to="/services/digitalmarketing/Smm">
               <button className=" mt-6 px-6 py-3 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg ">
                 Read More
               </button>
             </Link>
           </div>
           <div className="">
-            <img className="float-end w-96 h-96" src={seoImage} />
+            <img 
+             data-aos="fade-up"
+            className="float-end w-96 h-96" src={seoImage} />
           </div>
         </div>
       </div>

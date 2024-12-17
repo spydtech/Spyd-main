@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos"; // Import AOS here
+import "aos/dist/aos.css";
 import pythonImage from "../../assets/backend/pythondevelopment.png";
 import { Link } from "react-router-dom";
+
 function PythonDevelopment() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
       <div className="lg:mx-4 mt-6">
-        <div className=" flex lg:flex-row flex-col-reverse justify-around items-center">
-          <div className="lg:w-1/2 w-full p-2 h-auto">
+        <div className="flex lg:flex-row flex-col-reverse justify-around items-center">
+          <div
+            data-aos="fade-left"
+            className="lg:w-1/2 w-full p-2 h-auto"
+          >
             <p className="lg:text-3xl text-xl mb-6 bg-gradient-to-r from-[#00ceff] to-[#0072ff] inline-block text-transparent bg-clip-text">
               Python Development
             </p>
@@ -18,14 +30,16 @@ function PythonDevelopment() {
               manual coding, saving time, and facilitating swift development.
             </p>
 
-            <Link to="/backend/pythondevelopment">
-              <button className=" mt-6 px-6 py-3 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg ">
+            <Link to="/services/backend/pythondevelopment">
+              <button className="mt-6 px-6 py-3 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg">
                 Read More
               </button>
             </Link>
           </div>
           <div className="">
-            <img className="float-end w-96 h-96" src={pythonImage} />
+            <img 
+            data-aos="fade-up"
+            className="float-end w-96 h-96" src={pythonImage} alt="Python Development" />
           </div>
         </div>
       </div>

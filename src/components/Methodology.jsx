@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"
+import image from "../assets/Home/home/methodology.png"
 
 function Methodology() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="bg-white min-h-screen py-10 px-4 flex flex-col items-center relative overflow-hidden">
       {/* Background grid lines */}
       <div className="grid-lines"></div>
 
       {/* Banner */}
-      <div className="text-center max-w-4xl z-10">
+      <div className="text-center max-w-4xl z-10" 
+       data-aos="fade-left"
+      >
         <h1 className="text-lg md:text-3xl font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent md:mb-6">
           We are a one-stop, full-service, and turnkey solutions provider for
           Web, Mobility and Digital Marketing Services.
@@ -15,20 +25,24 @@ function Methodology() {
       </div>
 
       {/* Image Section */}
-      <div className="my-8 flex justify-center z-10">
+      <div className="my-8 flex justify-center z-10"
+       data-aos="fade-right"
+      >
         <img
-          src="https://s3-alpha-sig.figma.com/img/9ae2/53b2/7d9d582521ef6d7bf13b673ea6125fed?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ysj93AgKQ-ATBEuSP7ZoRfAJOk~D7fPLgAyvBxkzZKRjgNweSIj8WW5kdm9x0eKdZXx6Rv08ppg5BZOr4FV9jIONDTDakk9J745y03gCmaPfEoGCvjJkTMxGHnPjGNB7kFaaEVUsfpCvPSvdBSgRB8LPBiOOAIPRkyBdLQhouEP0AJZKVb2~Jgg5S43MWPdlaTDDUoXUF6cJVL67x9xEF8yPe4UMoyLCusax78NENO44t1PpzxMqzoluN39BDvUrrnNo19fo3Rhe1NNgUNHHqAQaoa6a3-qgjSrdBVY8J2SigL8479NWJjlg2PwtaU4XDvzTdDJOa7bJDVQefQ0ehA__"
+          src={image}
           alt="Responsive Web Design"
           className="w-full max-w-2xl"
         />
       </div>
 
       {/* Methodology Section */}
-      <div className="text-center max-w-3xl md:mt-8 z-10">
+      <div className="text-center max-w-3xl md:mt-8 z-10"
+       data-aos="fade-up"
+      >
         <h2 className="md:text-2xl text-lg font-semibold bg-gradient-to-r from-[#38bdf8] to-blue-700 bg-clip-text text-transparent mb-4">
           Our Methodology for Website Design
         </h2>
-        <p className="text-gray-700 leading-relaxed md:text-lg text-sm">
+        <p className="text-[#141414] leading-relaxed md:text-lg text-sm">
           Crafting a website that aligns with your distinct business objectives. Explore our meticulous design process,
           meticulously designed to deliver tailor-made and goal-centric digital solutions.
         </p>

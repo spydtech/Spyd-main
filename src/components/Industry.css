@@ -1,0 +1,326 @@
+
+.industries-design-block {
+    margin-top: 50px;
+    width: 100%;
+    height: 376px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.industries-design-block .container {
+    max-width: inherit;
+    width: 1200px;
+    height: 376px;
+    padding: 0px;
+    position: relative;
+    background: url(../assets/Home/industry.svg) no-repeat bottom center;
+}
+
+.industries-design-block .animation-slide-links {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.industries-design-block.selected .ani-link1 {
+    height: 129px;
+}
+
+.animation-slide-links .ani-link.ani-link1 {
+    width: 100px;
+    left: 20px;
+    bottom: 85px;
+}
+
+.animation-slide-links .ani-link {
+    position: absolute;
+    height: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.industries-design-block .animation-slide-links {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.industries-design-block.selected .ani-link i {
+    width: 15px;
+    height: 15px;
+}
+
+.industries-design-block.selected .ani-link a {
+    opacity: 1;
+}
+
+.animation-slide-links .ani-link.ani-link1 i {
+    background-color: #0099cc;
+}
+
+.animation-slide-links .ani-link a {
+    font-weight: 500;
+    width: 100%;
+    right: 0;
+    color: #333333;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 25px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.animation-slide-links .ani-link.ani-link1 i {
+    background-color: #0099cc;
+}
+
+.animation-slide-links .ani-link i {
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: -14px;
+    margin-left: -7px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.animation-slide-links .ani-link.ani-link1 {
+    width: 100px;
+    left: 10px;
+    bottom: 85px;
+}
+
+.animation-slide-links .ani-link {
+    position: absolute;
+    height: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.industries-design-block.selected .ani-link2 {
+    height: 200px;
+}
+
+.animation-slide-links .ani-link.ani-link2 {
+    width: 100px;
+    left: 70px;
+    bottom: 70px;
+}
+
+.industries-design-block.selected .ani-link i {
+    width: 15px;
+    height: 15px;
+}
+
+.animation-slide-links .ani-link.ani-link2 i {
+    background-color: #ff9900;
+}
+
+.industries-design-block.selected .ani-link3 {
+    height: 196px;
+}
+
+.animation-slide-links .ani-link.ani-link3 {
+    width: 100px;
+    left: 185px;
+    bottom: 125px;
+}
+
+.animation-slide-links .ani-link.ani-link3 i {
+    background-color: #66cccc;
+}
+
+.industries-design-block.selected .ani-link4 {
+    height: 121px;
+}
+
+.animation-slide-links .ani-link.ani-link4 {
+    width: 170px;
+    left: 269px;
+    bottom: 123px;
+}
+
+.animation-slide-links .ani-link.ani-link4 i {
+    background-color: #6985d9;
+}
+
+.industries-design-block.selected .ani-link5 {
+    height: 160px;
+}
+
+.animation-slide-links .ani-link.ani-link5 {
+    width: 160px;
+    left: 350px;
+    bottom: 144px;
+}
+
+.animation-slide-links .ani-link.ani-link5 i {
+    background-color: #00acc8;
+}
+
+.industries-design-block.selected .ani-link6 {
+    height: 130px;
+}
+
+.animation-slide-links .ani-link.ani-link6 {
+    width: 100px;
+    left: 440px;
+    bottom: 76px;
+}
+
+.animation-slide-links .ani-link.ani-link6 i {
+    background-color: #8bc53f;
+}
+
+.industries-design-block.selected .ani-link7 {
+    height: 179px;
+}
+
+.animation-slide-links .ani-link.ani-link7 {
+    width: 140px;
+    left: 520px;
+    bottom: 83px;
+}
+
+.animation-slide-links .ani-link.ani-link7 i {
+    background-color: #f6a704;
+}
+
+.industries-design-block.selected .ani-link8 {
+    height: 108px;
+}
+
+.animation-slide-links .ani-link.ani-link8 {
+    width: 100px;
+    left: 610px;
+    bottom: 71px;
+}
+
+.animation-slide-links .ani-link.ani-link8 i {
+    background-color: #5ac8fb;
+}
+
+.industries-design-block.selected .ani-link9 {
+    height: 103px;
+}
+
+.animation-slide-links .ani-link.ani-link9 {
+    width: 100px;
+    left: 760px;
+    bottom: 182px;
+}
+
+.animation-slide-links .ani-link.ani-link9 i {
+    background-color: #e57e22;
+}
+
+.industries-design-block.selected .ani-link10 {
+    height: 130px;
+}
+
+.animation-slide-links .ani-link.ani-link10 {
+    width: 200px;
+    right: 210px;
+    bottom: 100px;
+}
+
+.animation-slide-links .ani-link.ani-link10 i {
+    background-color: #e57e22;
+}
+
+.industries-design-block.selected .ani-link11 {
+    height: 133px;
+}
+
+.animation-slide-links .ani-link.ani-link11 {
+    width: 100px;
+    right: 155px;
+    bottom: 74px;
+}
+
+.animation-slide-links .ani-link.ani-link11 i {
+    background-color: #f3782e;
+}
+
+.industries-design-block.selected .ani-link12 {
+    height: 200px;
+}
+
+.animation-slide-links .ani-link.ani-link12 {
+    width: 170px;
+    right: -22px;
+    bottom: 90px;
+}
+
+.animation-slide-links .ani-link.ani-link12 i {
+    background-color: #12afe6;
+}
+
+.animation-slide-links .ani-link:after {
+    content: '';
+    width: 2px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.animation-slide-links .ani-link a:after {
+    content: '';
+    width: 100%;
+    left: -100%;
+    bottom: 0;
+    height: 2px;
+    background-color: #dde6f0;
+    position: absolute;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.animation-slide-links .ani-link a:hover:after {
+    left: 0px;
+}
+
+.selected .zoomIn {
+    -webkit-animation-name: zoomIn !important;
+    animation-name: zoomIn !important;
+}
+
+.delay3 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.animated3 {
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+} 
+
+
+ 
