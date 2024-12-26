@@ -34,22 +34,23 @@ const PowerfulFeatures = () => {
             className="grid gap-6 grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 mt-12">
                 {/* Single Feature Card */}
                 <div className="bg-[#1F1F1F] hover:bg-gradient-to-r from-blue-700 to-[#38bdf8] transition-colors duration-300 rounded-2xl p-6 text-center">
-                    <a href="tel:+91-6305207832">
+                    <a href="tel:+91-8332843707">
                         <MdDialpad className="text-4xl text-white mx-auto" />
                         <p className="text-white text-xl mt-4">Calling</p>
                     </a>
                 </div>
 
                 <div className="bg-[#1F1F1F] hover:bg-gradient-to-r from-blue-700 to-[#38bdf8] transition-colors duration-300 rounded-2xl p-6 text-center">
-                    <a href="mailto:ashwinikumari@email.com">
-                        <MdOutlineEmail className="text-4xl text-white mx-auto" />
-                        <p className="text-white text-xl mt-4">Emailing</p>
-                    </a>
-                </div>
+  <a href="mailto:sathish@spydtech.com">
+    <MdOutlineEmail className="text-4xl text-white mx-auto" />
+    <p className="text-white text-xl mt-4">Emailing</p>
+  </a>
+</div>
+
 
                 <div className="bg-[#1F1F1F] hover:bg-gradient-to-r from-blue-700 to-[#38bdf8] transition-colors duration-300 rounded-2xl p-6 text-center">
                     <a
-                        href="sms:123456789"
+                        href="sms:8332843707"
                         onClick={(e) => {
                             if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) {
                                 e.preventDefault();
@@ -73,7 +74,7 @@ const PowerfulFeatures = () => {
                 </div>
 
                 <div className="bg-[#1F1F1F] hover:bg-gradient-to-r from-blue-700 to-[#38bdf8] transition-colors duration-300 rounded-2xl p-6 text-center">
-                    <a href="tel:+91-123456789">
+                    <a href="tel:+91-8332843707">
                         <LuPhoneCall className="text-4xl text-white mx-auto" />
                         <p className="text-white text-xl mt-4">Call Coaching</p>
                     </a>

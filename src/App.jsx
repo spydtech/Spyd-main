@@ -83,6 +83,11 @@ import IphoneApplication from "./components/Mobile/IphoneApplication";
 import MobileApplication from "./components/Mobile/MobileApplication";
 import RequestStatus from "./components/Admin/RequestStatus";
 import PortfolioMain from "./components/Portfolio/PortfolioMain";
+import LoginPage from "./components/Admin/LoginPage/LoginPage";
+import JobRequestStatus from "./components/Admin/JobRequestStatus";
+import ApproachRequest from "./components/Admin/ApproachRequest";
+import Sidebar from "./components/Admin/Sidebar";
+
 
 
 
@@ -204,7 +209,10 @@ function App() {
 
 
               {/* Admin */}
-              <Route path="/request" element={<RequestStatus />} />
+              <Route path="/request" element={<JobRequestStatus />} />
+              <Route path="/approach" element={<ApproachRequest />} />
+              <Route path="/admin" element={<Sidebar />} />
+              <Route path="/login" element={<LoginPage />} />
             </Routes>
           </div>
         </Router>

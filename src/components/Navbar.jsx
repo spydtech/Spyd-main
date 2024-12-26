@@ -15,7 +15,7 @@ import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 import PodcastsOutlinedIcon from "@mui/icons-material/PodcastsOutlined";
 import DvrOutlinedIcon from "@mui/icons-material/DvrOutlined";
 import ModelTrainingIcon from "@mui/icons-material/ModelTraining";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { FaPerson } from "react-icons/fa6";
 import logo from "../assets/Home/logo.png";
@@ -158,6 +158,22 @@ function Navbar() {
     setMobileDropdownOpen(null);
   };
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  // Simulate checking for login status from localStorage or a session
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token); // Set login status based on token presence
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("isLoggedIn");
+    setIsLoggedIn(false);
+    navigate("/");
+  };
+
   return (
     <nav className="bg-white shadow-md relative">
       <div className="flex justify-between items-center lg:p-4 p-2 max-w-7xl mx-auto">
@@ -272,7 +288,18 @@ function Navbar() {
         </ul>
 
         {/* Call-to-action Button */}
-        <Link to="/login"> <h1 className="text-blue-600 hover:text-sky-500">Login</h1> </Link>
+        {/* Login/Logout Button */}
+        {isLoggedIn ? (
+  <button onClick={handleLogout} className="text-blue-600 hover:text-red-500">
+    Logout
+  </button>
+) : (
+  <Link to="/login" className="text-blue-600 hover:text-sky-500">
+    Login
+  </Link>
+)}
+
+
         <Link to="/tryademo">
           <button className="hidden lg:block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
             TRY A DEMO
@@ -369,7 +396,18 @@ function Navbar() {
 
           {/* Demo Button */}
           <div className="p-4">
-          <Link to="/login"> <h1 className="text-blue-600 hover:text-sky-500">Login</h1> </Link>
+          {/* Login/Logout Button */}
+          {isLoggedIn ? (
+  <button onClick={handleLogout} className="text-blue-600 hover:text-red-500">
+    Logout
+  </button>
+) : (
+  <Link to="/login" className="text-blue-600 hover:text-sky-500">
+    Login
+  </Link>
+)}
+
+
             <Link to="/tryademo">
               <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
                 TRY A DEMO

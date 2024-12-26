@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function JobOpenings() {
   const [selectedRole, setSelectedRole] = useState("javaDeveloper"); // Default role
@@ -170,9 +171,12 @@ function JobOpenings() {
           <div className="flex justify-start mt-4 items-center"
           data-aos="fade-down"
           >
+            <Link to="/apply">
             <button className="bg-gradient-to-r from-[#00ceff] to-[#0072ff] text-white py-3 px-8 rounded-lg shadow-md">
               Apply Now
             </button>
+            </Link>
+           
           </div>
         </div>
       </div>

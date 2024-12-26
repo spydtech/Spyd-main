@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom"
 
 function CallToAction() {
   useEffect(() => {
@@ -19,9 +20,13 @@ function CallToAction() {
       <p className="text-gray-600 text-sm md:text-lg mt-4 text-justify md:text-center">
         Join us in a dialogue that transcends boundaries. At the heart of our passion lies innovation, where ideas meet execution, crafting a seamless and beautiful experience. Your thoughts matter—let's explore the future of technology together. Reach out via call or email, and let the conversation begin.
       </p>
+      
+      <Link to="tryademo">
       <button className="mt-6 md:px-6 md:py-3 px-2 py-1  text-sm md:text-lg bg-gradient-to-r from-[#38bdf8] to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg">
         Read More
       </button>
+      </Link>
+     
     </div>
     <p className="text-center text-sm text-blue-500 mt-8"
     data-aos="fade-up"

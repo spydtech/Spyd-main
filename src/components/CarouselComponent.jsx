@@ -16,6 +16,7 @@ import slider2 from "../assets/Home/home/home_slider2.png";
 import slider3 from "../assets/Home/home/Home_slider3.png";
 import slider4 from "../assets/Home/home/home_slider4.png";
 import slider5 from "../assets/Home/home/home_slider5.png";
+import { Link } from "react-router-dom"
 
 
 const CarouselComponent = () => {
@@ -65,9 +66,12 @@ const CarouselComponent = () => {
                   <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm md:text-lg px-5 py-1 md:px-14 md:py-2 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-500">
                     EXPLORE
                   </button>
+                  <Link to="/contactus">
                   <button className="border-2 border-blue-500 text-blue-500 text-sm md:text-lg px-4 py-1 md:px-6 md:py-2 rounded-lg hover:bg-blue-500 hover:text-white transition">
                     CONTACT US
                   </button>
+                  </Link>
+                 
                 </div>
               </div>
               <div className="lg:w-1/2 "
@@ -111,9 +115,12 @@ const CarouselComponent = () => {
                   <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm md:text-lg px-5 py-1 md:px-14 md:py-2 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-500">
                     EXPLORE
                   </button>
+                  <Link to="/contactus">
                   <button className="border-2 border-blue-500 text-blue-500 text-sm md:text-lg px-4 py-1 md:px-10 md:py-2 rounded-lg hover:bg-blue-500 hover:text-white transition">
                     CONTACT US
                   </button>
+                  </Link>
+                
                 </div>
               </div>
             </div>
@@ -139,9 +146,13 @@ const CarouselComponent = () => {
                   <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm md:text-lg px-5 py-1 md:px-14 md:py-2 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-500">
                     EXPLORE
                   </button>
+                  <Link to="/contactus">
                   <button className="border-2 border-blue-500 text-blue-500 text-sm md:text-lg px-4 py-1 md:px-6 md:py-2 rounded-lg hover:bg-blue-500 hover:text-white transition">
                     CONTACT US
                   </button>
+                  
+                  </Link>
+                 
                 </div>
               </div>
               <div className="lg:w-1/2"
@@ -184,9 +195,12 @@ const CarouselComponent = () => {
                   <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm md:text-lg px-5 py-1 md:px-14 md:py-2 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-500">
                     EXPLORE
                   </button>
+                  <Link to="/contactus">
                   <button className="border-2 border-blue-500 text-blue-500 text-sm md:text-lg px-4 py-1 md:px-10 md:py-2 rounded-lg hover:bg-blue-500 hover:text-white transition">
                     CONTACT US
                   </button>
+                  </Link>
+                 
                 </div>
               </div>
             </div>
@@ -211,9 +225,12 @@ const CarouselComponent = () => {
                   <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-sm md:text-lg px-5 py-1 md:px-14 md:py-2 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-500">
                     EXPLORE
                   </button>
+                  <Link to="/contactus">
                   <button className="border-2 border-blue-500 text-blue-500 text-sm md:text-lg px-4 py-1 md:px-6 md:py-2 rounded-lg hover:bg-blue-500 hover:text-white transition">
                     CONTACT US
                   </button>
+                  </Link>
+                 
                 </div>
               </div>
               <div className="lg:w-1/2"

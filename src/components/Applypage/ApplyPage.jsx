@@ -8,12 +8,12 @@ const ApplyPage = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
-    phone: "",
+    emailAddress: "",
+    phoneNumber: "",
     linkedIn: "",
-    position: "",
-    referral: "",
-    resume: "",
+    positionApplied: "",
+    source: "",
+    resume: null,
     coverLetter: ""
   });
 
@@ -29,16 +29,64 @@ const ApplyPage = () => {
     const file = e.target.files[0];
     setFormData((prevState) => ({
       ...prevState,
-      resume: file ? file.name : ""
+      resume: file
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Save data to localStorage
-    localStorage.setItem("applicationData", JSON.stringify(formData));
-    alert("Your application has been submitted!");
+
+    // Use the formData state for all form values
+    const form = new FormData();
+    form.append('firstName', formData.firstName);
+    form.append('lastName', formData.lastName);
+    form.append('emailAddress', formData.emailAddress);
+    form.append('phoneNumber', formData.phoneNumber);
+    form.append('linkedIn', formData.linkedIn);
+    form.append('coverLetter', formData.coverLetter);
+
+    // Ensure values are sent as uppercase for enums (if needed)
+    form.append('positionApplied', formData.positionApplied.toUpperCase());
+    form.append('source', formData.source.toUpperCase());
+
+    // If resume is selected, append it
+    if (formData.resume) {
+      form.append('resume', formData.resume);
+    }
+
+    try {
+      const response = await fetch('http://localhost:8080/application/save1', {
+        method: 'POST',
+        body: form,
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(`Error: ${errorData.message || 'Unknown error'}`);
+      }
+
+      const result = await response.json();
+      console.log('Application submitted successfully', result);
+
+      // Reset the form after successful submission
+      setFormData({
+        firstName: "",
+        lastName: "",
+        emailAddress: "",
+        phoneNumber: "",
+        linkedIn: "",
+        positionApplied: "",
+        source: "",
+        resume: null,
+        coverLetter: ""
+      });
+
+    } catch (error) {
+      console.error('Submission Error:', error);
+      alert('Error in submission: ' + error.message);
+    }
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -75,119 +123,97 @@ const ApplyPage = () => {
       {/* Bottom Section */}
       <div className="flex flex-col lg:flex-row gap-8 p-4 lg:p-12">
         <div className="flex justify-center items-center w-2/3">
-          <form
-            className="p-4 rounded-lg w-full"
-            onSubmit={handleSubmit}
-          >
+          <form className="p-4 rounded-lg w-full" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="firstName" className="block text-sm text-black">
-                  First name
-                </label>
+                <label htmlFor="firstName" className="block text-sm text-black">First name</label>
                 <input
                   type="text"
                   id="firstName"
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First name"
-                  className="mt-1 p-2 border border-black rounded-md w-auto md:w-full"
+                  className="mt-1 p-2 border border-black rounded-md w-full"
                 />
               </div>
               <div>
-                <label htmlFor="lastName" className="block text-sm text-black">
-                  Last name
-                </label>
+                <label htmlFor="lastName" className="block text-sm text-black">Last name</label>
                 <input
                   type="text"
                   id="lastName"
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last name"
-                  className="mt-1 p-2 border border-black rounded-md w-auto md:w-full"
+                  className="mt-1 p-2 border border-black rounded-md w-full"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm text-black">
-                  Email address
-                </label>
+                <label htmlFor="emailAddress" className="block text-sm text-black">Email address</label>
                 <input
                   type="email"
-                  id="email"
-                  value={formData.email}
+                  id="emailAddress"
+                  value={formData.emailAddress}
                   onChange={handleChange}
-                  placeholder="ex:myname@gmail.com"
-                  className="mt-1 p-2 border border-black rounded-md w-auto md:w-full"
+                  placeholder="ex: myname@gmail.com"
+                  className="mt-1 p-2 border border-black rounded-md w-full"
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm text-black">
-                  Phone number
-                </label>
-                <div className="flex flex-col sm:flex-row items-center gap-2 mt-1">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
-                    alt="India Flag"
-                    className="w-8 h-6 lg:visible border border-black rounded-md"
-                  />
-                  <input
-                    type="tel"
-                    id="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="+91"
-                    className="flex-1 w-full p-2 border border-black rounded-md"
-                  />
-                </div>
+                <label htmlFor="phoneNumber" className="block text-sm text-black">Phone number</label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                  placeholder="+91"
+                  className="mt-1 p-2 border border-black rounded-md w-full"
+                />
               </div>
               <div>
-                <label htmlFor="linkedIn" className="block text-sm text-black">
-                  LinkedIn
-                </label>
+                <label htmlFor="linkedIn" className="block text-sm text-black">LinkedIn</label>
                 <input
                   type="url"
                   id="linkedIn"
                   value={formData.linkedIn}
                   onChange={handleChange}
-                  placeholder="LinkedIn.profile"
+                  placeholder="LinkedIn profile link"
                   className="mt-1 p-2 border border-black rounded-md w-full"
                 />
               </div>
               <div>
-                <label htmlFor="position" className="block text-sm text-black">
-                  Position Applied
-                </label>
+                <label htmlFor="positionApplied" className="block text-sm text-black">Position Applied</label>
                 <select
-                  id="position"
-                  value={formData.position}
+                  id="positionApplied"
+                  value={formData.positionApplied}
                   onChange={handleChange}
                   className="mt-1 p-2 border border-black rounded-md w-full"
                 >
                   <option value="">Please select</option>
-                  <option value="developer">Developer</option>
-                  <option value="designer">Designer</option>
-                  <option value="manager">Manager</option>
+                  <option value="DEVELOPER">Developer</option>
+                  <option value="DESIGNER">Designer</option>
+                  <option value="JAVA">Java</option>
                 </select>
               </div>
               <div>
-                <label htmlFor="referral" className="block text-sm text-black">
+                <label htmlFor="source" className="block text-sm text-black">
                   How did you hear about us
                 </label>
                 <select
-                  id="referral"
-                  value={formData.referral}
+                  id="source"
+                  value={formData.source}
                   onChange={handleChange}
                   className="mt-1 p-2 border border-black rounded-md w-full"
                 >
                   <option value="">Please select</option>
                   <option value="linkedin">LinkedIn</option>
                   <option value="website">Website</option>
-                  <option value="friend">Friend</option>
+                  <option value="google">Google</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="facebook">Facebook</option>
                 </select>
               </div>
               <div>
-                <label htmlFor="resume" className="block text-sm  text-black">
-                  Resume
-                </label>
+                <label htmlFor="resume" className="block text-sm text-black">Resume</label>
                 <input
                   type="file"
                   id="resume"
@@ -195,43 +221,22 @@ const ApplyPage = () => {
                   className="mt-1 p-2 border border-black rounded-md w-full"
                 />
               </div>
-              {/* <div>
-                <label htmlFor="resume" className="block text-sm text-black">
-                  Resume
-                </label>
-                <div className="relative mt-1">
-                  <input
-                    type="file"
-                    id="resume"
-                    onChange={handleFileChange}
-                    className="absolute inset-0 w-full h-full border-2 opacity-0 cursor-pointer"
-                  />
-                  <label
-                    htmlFor="resume"
-                    className="inline-block px-4 py-2 bg-gradient-to-b from-[#00CEFF] to-[#0072FF] text-white rounded-md cursor-pointer text-center"
-                  >
-                    Choose File
-                  </label>
-                </div>
-              </div> */}
             </div>
             <div className="mt-4">
-              <label htmlFor="coverLetter" className="block text-sm text-black">
-                Cover Letter
-              </label>
+              <label htmlFor="coverLetter" className="block text-sm text-black">Cover Letter</label>
               <textarea
                 id="coverLetter"
                 value={formData.coverLetter}
                 onChange={handleChange}
                 rows="3"
                 placeholder="Write something...(optional)"
-                className="mt-1 p-2 border border-black rounded-md w-auto md:w-full"
+                className="mt-1 p-2 border border-black rounded-md w-full"
               ></textarea>
             </div>
             <div className="w-full text-center">
               <button
                 type="submit"
-                className="mt-4 w-40 h-12 sm:w-60 sm:h-16 text-center bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white py-2 rounded-md shadow-md hover:to-[#00CEFF] hover:from-[#0072FF] lg:text-2xl"
+                className="mt-4 w-40 h-12 sm:w-60 sm:h-16 bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white py-2 rounded-md shadow-md hover:to-[#00CEFF] hover:from-[#0072FF] lg:text-2xl"
               >
                 Apply
               </button>
@@ -255,4 +260,5 @@ const ApplyPage = () => {
     </div>
   );
 };
+
 export default ApplyPage;
