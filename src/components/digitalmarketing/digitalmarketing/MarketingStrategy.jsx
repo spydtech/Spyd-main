@@ -6,7 +6,7 @@ function MarketingStrategy() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
     });
   }, []);
   const data = [

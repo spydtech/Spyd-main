@@ -4,10 +4,10 @@ import "aos/dist/aos.css";
 
 import digitalmarketingimage from "../../../assets/digitalmarketing/digitalmarketing.png";
 
-function digitalmarketing() {
+function DigitalMarketing() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
     });
   }, []);
   return (
@@ -35,4 +35,4 @@ function digitalmarketing() {
   );
 }
 
-export default digitalmarketing;
+export default DigitalMarketing;

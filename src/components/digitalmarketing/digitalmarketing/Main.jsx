@@ -1,14 +1,16 @@
 import React,{useEffect} from "react";
-import DigitalMarketing from "./digitalmarketing";
+// import DigitalMarketing from "./digitalmarketing";
 import MarketingStrategy from "./MarketingStrategy";
 import Seo from "./Seo";
 import Ppc from "./Ppc";
 import Smm from "./Smm";
 import ContentMarketing from "./ContentMarketing";
 import EmailMarketing from "./EmailMarketing";
-import emailmarketingimage from "../../../assets/digitalmarketing/bgimage.png";
+// import emailmarketingimage from "../../../assets/digitalmarketing/bgimage.png";
 import CallToAction from "../../CallToAction";
 import Footer from "../../Footer";
+// import Digitalmarketing from "./DigitalMarketing";
+import DigitalMarketing from "./DigitalMarketing";
 
 function Main() {
   useEffect(() => {
