@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import Androidhome from './androidhome'
+import Androidhome from './Androidhome'
 import Capabilities from './Capabilities'
 import Ourprovenmethodology from './Ourprovenmethodology'
 import CallToAction from '../../CallToAction'
