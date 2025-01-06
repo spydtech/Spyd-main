@@ -6,7 +6,7 @@ import { useEffect } from "react";
 // import Navbar from './components/Navbar'
 import Home from "./components/Home";
 import Seo from "./components/digitalmarketing/seo/SeoMain";
-import DigitalMarketing from "./components/digitalmarketing/digitalmarketing/Main";
+import Main from "./components/digitalmarketing/digitalmarketing/Main";
 import Ppc from "./components/digitalmarketing/ppc/PpcMain";
 import SocialMediaMarketing from "./components/digitalmarketing/socialmediamarketing/SmmMain";
 import ContentMarketing from "./components/digitalmarketing/contentmarketing/CmMain";
@@ -174,7 +174,7 @@ function App() {
 
 
                {/* DigitalMarketing */}
-              <Route path="/services/digitalmarketing" element={<DigitalMarketing />} />
+              <Route path="/services/digitalmarketing" element={<Main />} />
               <Route path="/services/digitalmarketing/Seo" element={<Seo />} />
               <Route path="/services/digitalmarketing/Ppc" element={<Ppc />} />
               <Route
