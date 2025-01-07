@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import image from "../../../assets/company/services/drive-efficiency/jobs.png"
+import image1 from "../../../assets/company/services/drive-efficiency/background.png"
+import image2 from "../../../assets/company/services/drive-efficiency/out.png"
+import image4 from "../../../assets/company/services/drive-efficiency/in.png"
 
 const DriveEfficiency = () => {
 
@@ -33,7 +37,7 @@ const DriveEfficiency = () => {
       <div className="flex flex-col md:flex-row gap-5 lg:mx-10">
         <img
         data-aos="fade-left"
-          src="src/assets/company/services/drive-efficiency/jobs.png"
+          src={image}
           alt="image-jobs"
           className="md:h-72"
         />
@@ -43,14 +47,14 @@ const DriveEfficiency = () => {
           <div
             className="flex items-center  rounded-lg shadow-lg p-4 bg-cover bg-center h-28 bg-[#0866E2] w-3/4"
             style={{
-              backgroundImage: `url("src/assets/company/services/drive-efficiency/background.png")`,
+              backgroundImage: `url(${image1})`,
             }}
           >
             <div 
             data-aos="fade-right"
             className=" border-2 p-1 border-[#0866E2] flex-shrink-0 w-10 h-10 -ml-9 bg-white rounded-full flex items-center justify-center text-blue-600">
               <img
-                src="src/assets/company/services/drive-efficiency/out.png"
+                src={image2}
                 alt=""
               />
             </div>
@@ -68,14 +72,14 @@ const DriveEfficiency = () => {
           data-aos="fade-down"
             className="flex items-center  rounded-lg shadow-lg p-4 bg-cover bg-center h-28 bg-[#0866E2] w-3/4"
             style={{
-              backgroundImage: `url("src/assets/company/services/drive-efficiency/background.png")`,
+              backgroundImage: `url(${image1})`,
             }}
           >
             <div 
             data-aos="fade-right"
             className=" border-2 p-1 border-[#0866E2] flex-shrink-0 w-10 h-10 -ml-9 bg-white rounded-full flex items-center justify-center text-blue-600">
               <img
-                src="src/assets/company/services/drive-efficiency/in.png"
+                src={image4}
                 alt=""
               />
             </div>

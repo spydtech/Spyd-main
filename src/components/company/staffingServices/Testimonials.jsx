@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import image1 from "../../../assets/company/services/testimonials/Men.png";
+import image2 from "../../../assets/company/services/testimonials/Women.png";
 
 const Testimonials = () => {
 
@@ -17,28 +19,28 @@ const Testimonials = () => {
       role: "UI/UX Designer",
       description:
         "Designing interfaces that inspire and create seamless user experiences is my passion.",
-      imageUrl: "src/assets/company/services/testimonials/Women.png",
+      imageUrl: image2,
     },
     {
       name: "Bob Johnson",
       role: "Backend Developer",
       description:
         "Building robust server-side solutions that handle complex tasks efficiently drives my dedication to coding.",
-      imageUrl: "src/assets/company/services/testimonials/Men.png",
+      imageUrl: image1,
     },
     {
       name: "Eve Clark",
       role: "Software Engineer",
       description:
         "Crafting elegant code for complex problems while ensuring scalability and performance is my expertise.",
-      imageUrl: "src/assets/company/services/testimonials/Women.png",
+      imageUrl: image2,
     },
     {
       name: "Grace Wilson",
       role: "Frontend Developer",
       description:
         "Bringing designs to life with code and making them interactive and engaging for users is what drives me forward.",
-      imageUrl: "src/assets/company/services/testimonials/Men.png",
+      imageUrl: image1,
     },
   ];
 
