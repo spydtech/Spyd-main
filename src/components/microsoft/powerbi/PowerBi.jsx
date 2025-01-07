@@ -130,7 +130,7 @@ const PowerBi = () => {
   <p 
    data-aos="fade-up"
   className="relative md:text-xl text-sm lg:w-4/6 lg:ml-24 text-center text-white ">
-  Unleashing the Power of Microsoft Dynamics CRM with SpY D Technology
+  Unleashing the Power of Microsoft PowerBi with SpY D Technology
   </p>
  
   </div>

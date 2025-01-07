@@ -73,28 +73,38 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-4 ">Main</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/" className="hover:underline">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  About Us
+                <a href="/" className="hover:underline">
+                  Company
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Our Services
+                <a href="/" className="hover:underline">
+                  Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Resource Management
+                <a href="/portfolio" className="hover:underline">
+                  Portfolio
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/careers" className="hover:underline">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="/contactus" className="hover:underline">
                   Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="/tryademo" className="hover:underline">
+                  Try A Demo
                 </a>
               </li>
             </ul>
@@ -104,31 +114,31 @@ const Footer = () => {
           <div className="ml-10" 
           data-aos="fade-up"
           >
-            <h2 className="text-xl font-bold mb-4">Service</h2>
+            <h2 className="text-xl font-bold mb-4">Company</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:underline">
-                  ERPNext
+                <a href="/aboutus" className="hover:underline">
+                  AboutUs
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Web Development
+                <a href="/ourcore-values" className="hover:underline">
+                  OurCore Values
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/staffingservices" className="hover:underline">
                   Staffing Service
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Digital Marketing
+                <a href="/vision-and-mission" className="hover:underline">
+                  Vision And Mission
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Data Science
+                <a href="/whatmakeus-different" className="hover:underline">
+                  What Makes Us Different ?
                 </a>
               </li>
             </ul>
@@ -138,55 +148,60 @@ const Footer = () => {
           <div className="ml-10"
           data-aos="fade-up"
           >
-            <h2 className="text-xl font-bold mb-4">Focus</h2>
+            <h2 className="text-xl font-bold mb-4">Service</h2>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:underline">
-                  ERPNext Consultation
+                <a href="/services/erp/services" className="hover:underline">
+                  ERPNext Technology
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  ERPNext Implementation
+                <a href="/service/ecommerce" className="hover:underline">
+                  E-commerce solutions
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  ERPNext Development
+                <a href="/services/frontend" className="hover:underline">
+                  Web Development
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Headless Ecommerce With ERPNext
+                <a href="/services/digitalmarketing" className="hover:underline">
+                  Digital Marketing
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Websites with ERPNext
+                <a href="/services/mobile" className="hover:underline">
+                  Mobile Application
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Third-party integrations
+                <a href="/services/ai&ml" className="hover:underline">
+                  Advanced Technology
+                </a>
+              </li>
+              <li>
+                <a href="/services/cybersecurity" className="hover:underline">
+                  Cyber Security
                 </a>
               </li>
             </ul>
             <div className="mt-6">
               <h2 className="font-bold mb-2">Follow us:</h2>
               <div className="flex space-x-4 mt-4">
-              <a href="#" className="hover:text-gray-300 text-2xl">
+              <a href="https://www.facebook.com/people/SpY-D-Technology/100093011922221/" className="hover:text-gray-300 text-2xl">
                 <FaFacebookF />
               </a>
-              <a href="#" className="hover:text-gray-300 text-2xl">
+              <a href="https://www.instagram.com/spy_d_technology?igsh=OWhvaGJlZnFkMWkz" className="hover:text-gray-300 text-2xl">
                 <FaInstagram />
               </a>
-              <a href="#" className="hover:text-gray-300 text-2xl">
+              <a href="https://youtube.com/@spydtechnology?si=mFPne_3IMo3dWT50" className="hover:text-gray-300 text-2xl">
                 <FaYoutube />
               </a>
-              <a href="#" className="hover:text-gray-300 text-2xl">
+              <a href="/eslint.config.js" className="hover:text-gray-300 text-2xl">
                 <FaTwitter />
               </a>
-              <a href="#" className="hover:text-gray-300 text-2xl">
+              <a href="https://www.linkedin.com/company/spydtechnology/posts/?feedView=all" className="hover:text-gray-300 text-2xl">
                 <FaLinkedinIn />
               </a>
             </div>

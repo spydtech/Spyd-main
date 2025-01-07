@@ -157,7 +157,7 @@ const Sections = () => {
         By keeping this information in a centralized system, 
         business teams have access to the insights they need, the moment they need them.
         </p>
-        <Link to="/">
+        <Link to="/services/dynamics-crm">
         <button className=" lg:mt-10 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-sm md:text-lg py-1 px-2 text-white md:py-3 md:px-6 rounded hover:bg-blue-700 transition duration-300">
           Read More
         </button></Link>
@@ -179,7 +179,7 @@ const Sections = () => {
         There are various implementations of .NET. Each implementation allows 
         .NET code to execute in different places—Linux, macOS, Windows, iOS, Android, and many more.
         </p>
-        <Link to="/">
+        <Link to="/services/dotnet">
         <button className=" lg:mt-10 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-sm md:text-lg text-white py-1 px-2 md:py-3 md:px-6 rounded hover:bg-blue-700 transition duration-300">
           Read More
         </button>
@@ -217,7 +217,7 @@ const Sections = () => {
         rich visualizations, and advanced analytics,
          empowering you to drive strategic initiatives and stay ahead of the competition.
         </p>
-        <Link to="/">
+        <Link to="/services/powerbi">
         <button className=" lg:mt-10 bg-gradient-to-r from-[#38bdf8] to-blue-700 text-sm md:text-lg py-1 px-2 text-white md:py-3 md:px-6 rounded hover:bg-blue-700 transition duration-300">
           Read More
         </button></Link>
