@@ -6,6 +6,7 @@ import { IoMailOutline } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import logo from "../assets/Home/logo.png"
+import { Link } from "react-router-dom"
 
 
 const Footer = () => {
@@ -88,24 +89,25 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/portfolio" className="hover:underline">
+                <Link to="/portfolio" className="hover:underline">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/careers" className="hover:underline">
+                
+                <Link to="/careers" className="hover:underline">
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contactus" className="hover:underline">
+                <Link to="/contactus" className="hover:underline">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/tryademo" className="hover:underline">
+                <Link to="/tryademo" className="hover:underline">
                   Try A Demo
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -117,29 +119,29 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-4">Company</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/aboutus" className="hover:underline">
+                <Link to="/aboutus" className="hover:underline">
                   AboutUs
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/ourcore-values" className="hover:underline">
+                <Link to="/ourcore-values" className="hover:underline">
                   OurCore Values
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/staffingservices" className="hover:underline">
+                <Link to="/staffingservices" className="hover:underline">
                   Staffing Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/vision-and-mission" className="hover:underline">
+                <Link to="/vision-and-mission" className="hover:underline">
                   Vision And Mission
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/whatmakeus-different" className="hover:underline">
+                <Link to="/whatmakeus-different" className="hover:underline">
                   What Makes Us Different ?
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -151,59 +153,59 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-4">Service</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/services/erp/services" className="hover:underline">
+                <Link to="/services/erp/services" className="hover:underline">
                   ERPNext Technology
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/service/ecommerce" className="hover:underline">
+                <Link to="/service/ecommerce" className="hover:underline">
                   E-commerce solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/frontend" className="hover:underline">
+                <Link to="/services/frontend" className="hover:underline">
                   Web Development
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/digitalmarketing" className="hover:underline">
+                <Link to="/services/digitalmarketing" className="hover:underline">
                   Digital Marketing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/mobile" className="hover:underline">
+                <Link to="/services/mobile" className="hover:underline">
                   Mobile Application
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/ai&ml" className="hover:underline">
+                <Link to="/services/ai&ml" className="hover:underline">
                   Advanced Technology
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/cybersecurity" className="hover:underline">
+                <Link to="/services/cybersecurity" className="hover:underline">
                   Cyber Security
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="mt-6">
               <h2 className="font-bold mb-2">Follow us:</h2>
               <div className="flex space-x-4 mt-4">
-              <a href="https://www.facebook.com/people/SpY-D-Technology/100093011922221/" className="hover:text-gray-300 text-2xl">
+              <Link to="https://www.facebook.com/people/SpY-D-Technology/100093011922221/" className="hover:text-gray-300 text-2xl">
                 <FaFacebookF />
-              </a>
-              <a href="https://www.instagram.com/spy_d_technology?igsh=OWhvaGJlZnFkMWkz" className="hover:text-gray-300 text-2xl">
+              </Link>
+              <Link to="https://www.instagram.com/spy_d_technology?igsh=OWhvaGJlZnFkMWkz" className="hover:text-gray-300 text-2xl">
                 <FaInstagram />
-              </a>
-              <a href="https://youtube.com/@spydtechnology?si=mFPne_3IMo3dWT50" className="hover:text-gray-300 text-2xl">
+              </Link>
+              <Link to="https://youtube.com/@spydtechnology?si=mFPne_3IMo3dWT50" className="hover:text-gray-300 text-2xl">
                 <FaYoutube />
-              </a>
-              <a href="/eslint.config.js" className="hover:text-gray-300 text-2xl">
+              </Link>
+              <Link to="#" className="hover:text-gray-300 text-2xl">
                 <FaTwitter />
-              </a>
-              <a href="https://www.linkedin.com/company/spydtechnology/posts/?feedView=all" className="hover:text-gray-300 text-2xl">
+              </Link>
+              <Link to="https://www.linkedin.com/company/spydtechnology/posts/?feedView=all" className="hover:text-gray-300 text-2xl">
                 <FaLinkedinIn />
-              </a>
+              </Link>
             </div>
             </div>
           </div>

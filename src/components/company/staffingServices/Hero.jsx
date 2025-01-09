@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import image from "../../../assets/staffingServices/hero.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom"
 
 const Hero = () => {
   useEffect(() => {
@@ -28,10 +29,13 @@ const Hero = () => {
           Drive & convert top talent with technology-enabled staffing websites,
           job boards, and career portals.
         </p>
+        <Link to="/tryademo">
         <button 
         data-aos="fade-down"
         className="bg-[#0866E2] px-2 py-1 md:px-4 md:py-2 text-sm lg:text-base text-white rounded-lg">Book a Demo</button>
+      </Link>
       </div>
+      
       
     </div>
   );

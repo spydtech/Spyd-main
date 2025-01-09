@@ -5,6 +5,7 @@ import image from "../../../assets/company/services/drive-efficiency/jobs.png"
 import image1 from "../../../assets/company/services/drive-efficiency/background.png"
 import image2 from "../../../assets/company/services/drive-efficiency/out.png"
 import image4 from "../../../assets/company/services/drive-efficiency/in.png"
+import { Link } from "react-router-dom"
 
 const DriveEfficiency = () => {
 
@@ -92,12 +93,13 @@ const DriveEfficiency = () => {
               </p>
             </div>
           </div>
-
+          <Link to="/tryademo">
           <button 
           data-aos="fade-down"
           className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white py-2 px-6 rounded-lg shadow-md">
             Book a Demo
           </button>
+          </Link>
         </div>
       </div>
     </div>

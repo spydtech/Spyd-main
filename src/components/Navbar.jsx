@@ -183,10 +183,10 @@ function Navbar() {
         </div>
 
         {/* Hamburger menu for mobile */}
-        <div className="lg:hidden">
+        <div className="lg:hidden ">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-2xl text-end ml-40 md:ml-92 text-blue-600 focus:outline-none"
+            className="text-3xl text-end ml-40 md:ml-92 text-blue-600 focus:outline-none space-x-10"
           >
             {mobileMenuOpen ? "✖" : "☰"}
           </button>
@@ -395,7 +395,7 @@ function Navbar() {
           </ul>
 
           {/* Demo Button */}
-          <div className="p-4">
+          <div className="p-4  ">
           {/* Login/Logout Button */}
           {isLoggedIn ? (
   <button onClick={handleLogout} className="text-blue-600 hover:text-red-500">

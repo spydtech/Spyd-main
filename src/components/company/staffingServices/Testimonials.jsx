@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import image1 from "../../../assets/company/services/testimonials/Men.png";
 import image2 from "../../../assets/company/services/testimonials/Women.png";
+import { Link } from "react-router-dom"
 
 const Testimonials = () => {
 
@@ -141,10 +142,11 @@ const Testimonials = () => {
           <RiArrowRightSLine size={30} />
         </button>
       </div>
-
+     <Link to="/tryademo">
       <button className="bg-gradient-to-r from-[#00CEFF] to-[#0072FF] text-white py-2 px-6 rounded-lg shadow-md">
         Start for Free
       </button>
+      </Link>
      
     </div>
   );

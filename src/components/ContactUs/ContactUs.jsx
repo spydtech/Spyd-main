@@ -125,14 +125,14 @@ const ContactUs = () => {
             >
               We are here for you. How can we help you?
             </h4>
-            <form className="mt-4 space-y-4" data-aos="fade-left" onSubmit={handleSubmit}>
+            <form className="mt-4 space-y-4 " data-aos="fade-left" onSubmit={handleSubmit}>
               <input
                 type="text"
                 name="requestedName"
                 value={formData.requestedName}
                 onChange={handleChange}
                 placeholder="Enter your name"
-                className="w-full placeholder-[#0072FF] p-3 bg-blue-100 border"
+                className="w-full placeholder-[#0072FF]  text-[#0072FF] p-3 bg-blue-100 border"
                 required
               />
               <input
@@ -141,7 +141,7 @@ const ContactUs = () => {
                 value={formData.emailId}
                 onChange={handleChange}
                 placeholder="Enter your email address"
-                className="w-full placeholder-[#0072FF] p-3 bg-blue-100 border"
+                className="w-full placeholder-[#0072FF] text-[#0072FF] p-3 bg-blue-100 border"
                 required
               />
               <input
@@ -150,7 +150,7 @@ const ContactUs = () => {
                 value={formData.mobileNo}
                 onChange={handleChange}
                 placeholder="Phone number"
-                className="w-full p-3 placeholder-[#0072FF] bg-blue-100 border"
+                className="w-full p-3 placeholder-[#0072FF] text-[#0072FF] bg-blue-100 border"
               />
               <textarea
                 name="comments"
@@ -158,7 +158,7 @@ const ContactUs = () => {
                 onChange={handleChange}
                 placeholder="comments"
                 rows="4"
-                className="w-full p-3 placeholder-[#0072FF] bg-blue-100 border"
+                className="w-full p-3 placeholder-[#0072FF] text-[#0072FF]  bg-blue-100 border"
                 required
               />
               <button className="bg-[#0072FF] text-white px-6 py-3 font-bold hover:bg-blue-700 w-full md:w-auto">

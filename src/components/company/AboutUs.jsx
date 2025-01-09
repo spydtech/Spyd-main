@@ -54,7 +54,7 @@ const AboutUs = () => {
         <h1 className="text-center my-3 text-xl bg-gradient-to-r from-[#00CEFF] to-[#0072FF] bg-clip-text text-transparent"
         data-aos="fade-down"
         >WHO WE ARE</h1>
-        <ul className="mx-5 md:mx-10 lg:mx-20 space-y-3"
+        <ul className="mx-5 md:mx-10 lg:mx-20 space-y-3 text-justify"
         data-aos="fade-up"
         >
           {aboutusData.map((each) => (
