@@ -20,7 +20,7 @@ function LoginPage() {
 
     try {
       // Send POST request to your backend authentication endpoint
-      const response = await axios.post("http://localhost:8080/auth/signin", {
+      const response = await axios.post("http://15.206.94.23:8080/auth/signin", {
         email,
         password,
       });

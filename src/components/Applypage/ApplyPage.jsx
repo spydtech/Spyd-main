@@ -55,7 +55,7 @@ const ApplyPage = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8080/application/save1', {
+      const response = await fetch('http://15.206.94.23:8080/application/save1', {
         method: 'POST',
         body: form,
       });
