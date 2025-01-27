@@ -45,7 +45,7 @@ const ContactUs = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch("http://15.206.94.23:8080/contact/save", {
+      const response = await fetch("http://15.206.94.23:8081/contact/save", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

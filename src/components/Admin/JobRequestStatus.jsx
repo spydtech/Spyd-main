@@ -18,7 +18,7 @@ const JobRequestStatus = () => {
     const fetchData = async () => {
       try {
         setIsLoading(true); // Set loading state to true before fetching
-        const response = await axios.get("http://15.206.94.23:8080/application/getAll");
+        const response = await axios.get("http://15.206.94.23:8081/application/getAll");
         const fetchedData = response.data; // Adjust according to actual structure
 
         if (Array.isArray(fetchedData)) {
@@ -38,7 +38,7 @@ const JobRequestStatus = () => {
 
   const handleStatusUpdate = async (id, newStatus) => {
     try {
-      const response = await axios.put(`http://15.206.94.23:8080/api/job-requests/${id}`, { status: newStatus });
+      const response = await axios.put(`http://15.206.94.23:8081/api/job-requests/${id}`, { status: newStatus });
       if (response.status === 200) {
         setData(
           data.map((item) => (item.id === id ? { ...item, status: newStatus } : item))
@@ -55,7 +55,7 @@ const JobRequestStatus = () => {
     const link = document.createElement('a');
     
     // Set the link's href to the file's URL (backend URL + filename)
-    link.href = `http://15.206.94.23:8080/resumes/${filename}`; // Replace with your backend URL
+    link.href = `http://15.206.94.23:8081/resumes/${filename}`; // Replace with your backend URL
   
     // Set the download attribute to suggest the filename for download
     link.download = filename;
@@ -67,7 +67,7 @@ const JobRequestStatus = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://15.206.94.23:8080/api/job-requests/${id}`);
+      await axios.delete(`http://15.206.94.23:8081/api/job-requests/${id}`);
       setData(data.filter((item) => item.id !== id)); // Remove deleted item from the state
     } catch (err) {
       setError("Failed to delete the record.");

@@ -13,7 +13,7 @@ const ApproachRequest = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://15.206.94.23:8080/contact/getAll"); // Replace with your endpoint
+        const response = await fetch("http://15.206.94.23:8081/contact/getAll"); // Replace with your endpoint
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -32,7 +32,7 @@ const ApproachRequest = () => {
   // Handle delete action
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://15.206.94.23:8080/contact/delete/${id}`, {
+      const response = await fetch(`http://15.206.94.23:8081/contact/delete/${id}`, {
         method: "DELETE",
       });
       if (!response.ok) {
@@ -52,7 +52,7 @@ const ApproachRequest = () => {
     }
 
     try {
-      const response = await fetch(`http://15.206.94.23:8080/contact/status/change/${id}`, {
+      const response = await fetch(`http://15.206.94.23:8081/contact/status/change/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
