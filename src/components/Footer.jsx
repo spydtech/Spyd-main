@@ -61,7 +61,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <IoMailOutline className="mr-2 text-xl font-bold"></IoMailOutline>
                 <a href="mailto:info@spydtech.com" className="hover:underline">
-                  info@spydtech.com
+                  info@spyd-tech.com
                 </a>
               </li>
             </ul>

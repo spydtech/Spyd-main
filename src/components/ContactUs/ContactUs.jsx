@@ -107,10 +107,10 @@ const ContactUs = () => {
               Meera Complex Plot, No-852, 2nd Floor
             </p>
             <p className="mt-4 flex items-center">
-              <FaEnvelope className="mr-2" /> info@spydtech.com
+              <FaEnvelope className="mr-2" /> info@spyd-tech.com
             </p>
             <p className="flex items-center mt-2">
-              <IoMdCall className="mr-2" /> +91 8332843707
+              <IoMdCall className="mr-2" /> +91 9494307579
             </p>
           </div>
         </div>
@@ -176,19 +176,19 @@ const ContactUs = () => {
                 General Enquiries
               </p>
               <p className="text-[#0072FF] flex items-center">
-                <FaEnvelope className="text-blue-500 mr-2" /> info@spydtech.com
+                <FaEnvelope className="text-blue-500 mr-2" /> info@spyd-tech.com
               </p>
               <p className="text-[#0072FF] mt-2 flex items-center">
-                <FaEnvelope className="text-blue-500 mr-2" /> careers@spydtech.com
+                <FaEnvelope className="text-blue-500 mr-2" /> careers@spyd-tech.com
               </p>
               <p className="text-[#0072FF] mt-2 flex items-center">
-                <FaPhone className="text-blue-500 mr-2" /> +91 8332843707
+                <FaPhone className="text-blue-500 mr-2" /> +91 9494307579
               </p>
             </div>
             <div className="bg-blue-100 p-4 mt-4">
               <h4 className="text-[#0072FF] text-lg font-medium pb-4">Careers</h4>
               <p className="text-[#0072FF] flex items-center">
-                <FaEnvelope className="text-blue-500 mr-2" /> careers@spydtech.com
+                <FaEnvelope className="text-blue-500 mr-2" /> careers@spyd-tech.com
               </p>
             </div>
           </div>
