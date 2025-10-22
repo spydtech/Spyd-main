@@ -100,12 +100,14 @@ const ContactUs = () => {
               SpY D Tech Private Limited Headquarters
             </h3>
             <p className="mt-2 flex items-center">
-              <FaMapMarkerAlt className="text-lg mr-2" /> Madhapur Hyderabad,
-              Telangana - 500081
+              <FaMapMarkerAlt className="text-lg mr-2" /> 505/B-508, Fifth Floor,
+              "SANDHYA TECHNO-1", Raidurg, Pan Maktha Village,
+              RR Dist.,
+              Hyderabad - 500081.
             </p>
-            <p className="flex items-center pb-2">
+            {/* <p className="flex items-center pb-2">
               Meera Complex Plot, No-852, 2nd Floor
-            </p>
+            </p> */}
             <p className="mt-4 flex items-center">
               <FaEnvelope className="mr-2" /> info@spyd-tech.com
             </p>
