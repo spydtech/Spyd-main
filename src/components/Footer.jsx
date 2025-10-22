@@ -45,7 +45,8 @@ const Footer = () => {
             >
               <li className="flex items-start">
                 <LuMapPin className="mr-2 -mt-2 text-5xl"></LuMapPin>
-                <p>Plot no-852, Meera Complex, Rd no-45, Madhapur, Hyderabad-81</p>
+                <p>505/B-508, Fifth Floor, "SANDHYA TECHNO-1", Raidurg, Pan Maktha Village, Serilingampally Mandal, RR Dist.
+                Hyderabad-500081.</p>
               </li>
               <li className="flex items-center">
                 <FaRegAddressCard className="mr-2 text-xl"></FaRegAddressCard>
