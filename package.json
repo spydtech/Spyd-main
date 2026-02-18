@@ -1,4 +1,9 @@
 {
+  "homepage": ".",
+  // or
+  "homepage": "https://spydtech.com"
+},
+{
   "name": "spyd-main",
   "private": true,
   "version": "0.0.0",
