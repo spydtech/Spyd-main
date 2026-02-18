@@ -3,6 +3,7 @@ import { FaGripLines } from "react-icons/fa6";
 import { FaJoget } from "react-icons/fa";
 import JobRequestStatus from "./JobRequestStatus";
 import ApproachRequest from "./ApproachRequest";
+import Invoice from "./Invoice/Invoice";
 
 const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -42,7 +43,7 @@ const Sidebar = () => {
             }`}
           >
             <div className="">
-              <FaJoget className="text-xl" />
+              {/* <FaJoget className="text-xl" /> */}
             </div>
             <span
               className={`${
@@ -63,7 +64,7 @@ const Sidebar = () => {
             }`}
           >
             <div className="">
-              <FaJoget className="text-xl" />
+              {/* <FaJoget className="text-xl" /> */}
             </div>
             <span
               className={`${
@@ -73,6 +74,28 @@ const Sidebar = () => {
               Approach Request
             </span>
           </li>
+
+          {/* Add more tabs as needed */}
+           <li
+            onClick={() => handleTabChange("invoiceManagement")}
+            className={`flex items-center gap-2 h-8 px-3 mt-2 cursor-pointer  hover:text-[#000000] hover:bg-white hover:text-black transition-all duration-300 ${
+              activeTab === "invoiceManagement"
+                ? "bg-white text-blue-600"
+                : "hover:bg-white hover:text-black"
+            }`}
+          >
+            <div className="">
+              {/* <FaJoget className="text-xl" /> */}
+            </div>
+            <span
+              className={`${
+                isExpanded ? "opacity-100" : "opacity-0"
+              } text-sm font-medium transition-opacity duration-300`}
+            >
+              Invoice Management
+            </span>
+          </li>
+
         </ul>
       </div>
 
@@ -89,6 +112,12 @@ const Sidebar = () => {
           <div>
             <h1 className="text-2xl font-bold mb-4">Approach Request</h1>
             <ApproachRequest />
+          </div>
+        )}
+        {activeTab === "invoiceManagement" && (
+          <div>
+            <h1 className="text-2xl font-bold mb-4">Invoice Management</h1>
+            <Invoice />
           </div>
         )}
       </div>
