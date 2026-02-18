@@ -116,7 +116,7 @@ function Navbar() {
     { name: "Company", hasDropdown: true },
     { name: "Services", hasDropdown: true },
     // { name: "Products", link: "/products" },
-    { name: "Portfolio", link: "/portfolio" },
+    { name: "Portfolio", link: "/home" },
     { name: "Careers", link: "/careers" },
     { name: "Contact Us", link: "/contactus" },
   ];
