@@ -18,7 +18,7 @@ import ModelTrainingIcon from "@mui/icons-material/ModelTraining";
 import { Link, useNavigate } from "react-router-dom";
 
 import { FaPerson } from "react-icons/fa6";
-import logo from "../assets/Home/logo.png";
+import logo from "../assets/spydlogo/3 (1).png";
 
 function Navbar() {
   const [dropdownOpenFor, setDropdownOpenFor] = useState(null);
@@ -175,7 +175,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md relative">
+    <nav className="bg-blue-600 shadow-md relative">
       <div className="flex justify-between items-center lg:p-4 p-2 max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center">
@@ -198,7 +198,7 @@ function Navbar() {
             <li key={index} className="relative">
               {item.hasDropdown ? (
                 <span
-                  className="cursor-pointer text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded"
+                  className="cursor-pointer text-white hover:bg-blue-600 hover:text-white px-3 py-2 rounded"
                   onClick={() => toggleDropdown(item.name)}
                   onMouseEnter={() => item.hasDropdown && setDropdownOpenFor(item.name)}
                 >
@@ -208,7 +208,7 @@ function Navbar() {
                 <Link
                   to={item.link}
                   onClick={handleItemClick}
-                  className="text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded"
+                  className="text-white hover:bg-blue-600 hover:text-white px-3 py-2 rounded"
                 >
                   {item.name}
                 </Link>
